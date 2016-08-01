@@ -1,0 +1,487 @@
+a:8:{s:6:"config";a:5:{s:10:"phpVersion";s:5:"7.0.0";s:10:"yiiVersion";s:5:"2.0.9";s:11:"application";a:4:{s:3:"yii";s:5:"2.0.9";s:4:"name";s:14:"My Application";s:3:"env";s:3:"dev";s:5:"debug";b:1;}s:3:"php";a:4:{s:7:"version";s:5:"7.0.0";s:6:"xdebug";b:1;s:3:"apc";b:0;s:8:"memcache";b:0;}s:10:"extensions";a:10:{s:22:"yiisoft/yii2-bootstrap";a:3:{s:4:"name";s:22:"yiisoft/yii2-bootstrap";s:7:"version";s:7:"2.0.6.0";s:5:"alias";a:1:{s:14:"@yii/bootstrap";s:71:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2-bootstrap";}}s:25:"kartik-v/yii2-krajee-base";a:3:{s:4:"name";s:25:"kartik-v/yii2-krajee-base";s:7:"version";s:7:"1.8.5.0";s:5:"alias";a:1:{s:12:"@kartik/base";s:74:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/kartik-v/yii2-krajee-base";}}s:22:"kartik-v/yii2-markdown";a:3:{s:4:"name";s:22:"kartik-v/yii2-markdown";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:16:"@kartik/markdown";s:71:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/kartik-v/yii2-markdown";}}s:24:"yiisoft/yii2-swiftmailer";a:3:{s:4:"name";s:24:"yiisoft/yii2-swiftmailer";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:16:"@yii/swiftmailer";s:73:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2-swiftmailer";}}s:27:"arogachev/yii2-many-to-many";a:3:{s:4:"name";s:27:"arogachev/yii2-many-to-many";s:7:"version";s:7:"0.2.1.0";s:5:"alias";a:1:{s:21:"@arogachev/ManyToMany";s:76:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many";}}s:28:"kartik-v/yii2-widget-select2";a:3:{s:4:"name";s:28:"kartik-v/yii2-widget-select2";s:7:"version";s:11:"9999999-dev";s:5:"alias";a:1:{s:15:"@kartik/select2";s:77:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/kartik-v/yii2-widget-select2";}}s:24:"yiisoft/yii2-codeception";a:3:{s:4:"name";s:24:"yiisoft/yii2-codeception";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:16:"@yii/codeception";s:73:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2-codeception";}}s:18:"yiisoft/yii2-debug";a:3:{s:4:"name";s:18:"yiisoft/yii2-debug";s:7:"version";s:7:"2.0.6.0";s:5:"alias";a:1:{s:10:"@yii/debug";s:67:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2-debug";}}s:16:"yiisoft/yii2-gii";a:3:{s:4:"name";s:16:"yiisoft/yii2-gii";s:7:"version";s:7:"2.0.5.0";s:5:"alias";a:1:{s:8:"@yii/gii";s:65:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2-gii";}}s:18:"yiisoft/yii2-faker";a:3:{s:4:"name";s:18:"yiisoft/yii2-faker";s:7:"version";s:7:"2.0.3.0";s:5:"alias";a:1:{s:10:"@yii/faker";s:67:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2-faker";}}}}s:7:"request";a:14:{s:7:"flashes";a:0:{}s:10:"statusCode";i:200;s:14:"requestHeaders";a:14:{s:4:"host";s:11:"simplex.com";s:10:"connection";s:10:"keep-alive";s:14:"content-length";s:5:"11711";s:13:"cache-control";s:9:"max-age=0";s:6:"origin";s:18:"http://simplex.com";s:25:"upgrade-insecure-requests";s:1:"1";s:10:"user-agent";s:121:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36";s:12:"content-type";s:33:"application/x-www-form-urlencoded";s:6:"accept";s:74:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";s:3:"dnt";s:1:"1";s:7:"referer";s:38:"http://simplex.com/article/update?id=1";s:15:"accept-encoding";s:13:"gzip, deflate";s:15:"accept-language";s:44:"en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2";s:6:"cookie";s:468:"_csrf-frontend=4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu%22%3B%7D; advanced-frontend=caf6719bfe0cb4259b728593e640a0fd; _identity-backend=8396253a22f56b05afc4165514b2e034296e162887d407af8c652fd22f68af96a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229rNkx8D1v31WwbqjFAkRtdykZbCFgkSJ%22%2C2592000%5D%22%3B%7D";}s:15:"responseHeaders";a:2:{s:12:"X-Powered-By";s:9:"PHP/7.0.0";s:12:"Content-type";s:24:"text/html; charset=UTF-8";}s:5:"route";s:14:"article/update";s:6:"action";s:54:"frontend\controllers\ArticleController::actionUpdate()";s:12:"actionParams";a:1:{i:0;s:1:"1";}s:11:"requestBody";a:3:{s:12:"Content Type";s:33:"application/x-www-form-urlencoded";s:3:"Raw";s:11711:"_csrf-frontend=azRTTjFjczZGdgwPUwhFDg8FNQJ8DCNzD1MpHWcAJ2YvBTgbfCsjQw%3D%3D&ArticleRecord%5Bname%5D=Kartik+Yii+%D1%80%D0%B0%D0%B7%D0%BC%D0%B5%D1%82%D0%BA%D0%B0+Markdown%2C+%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F&ArticleRecord%5Bcategories_ids%5D=&ArticleRecord%5Bcategories_ids%5D%5B%5D=1&ArticleRecord%5Bcategories_ids%5D%5B%5D=2&ArticleRecord%5Btags_ids%5D=&ArticleRecord%5Btags_ids%5D%5B%5D=1&ArticleRecord%5Btags_ids%5D%5B%5D=2&ArticleRecord%5Btags_ids%5D%5B%5D=3&ArticleRecord%5Btags_ids%5D%5B%5D=4&ArticleRecord%5Btags_ids%5D%5B%5D=dfafds&ArticleRecord%5Bcontent%5D=yii2-markdown%0D%0A%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%3D%0D%0A%0D%0A%5B%21%5BLatest+Stable+Version%5D%28https%3A%2F%2Fposer.pugx.org%2Fkartik-v%2Fyii2-markdown%2Fv%2Fstable%29%5D%28https%3A%2F%2Fpackagist.org%2Fpackages%2Fkartik-v%2Fyii2-markdown%29%0D%0A%5B%21%5BLicense%5D%28https%3A%2F%2Fposer.pugx.org%2Fkartik-v%2Fyii2-markdown%2Flicense%29%5D%28https%3A%2F%2Fpackagist.org%2Fpackages%2Fkartik-v%2Fyii2-markdown%29%0D%0A%5B%21%5BTotal+Downloads%5D%28https%3A%2F%2Fposer.pugx.org%2Fkartik-v%2Fyii2-markdown%2Fdownloads%29%5D%28https%3A%2F%2Fpackagist.org%2Fpackages%2Fkartik-v%2Fyii2-markdown%29%0D%0A%5B%21%5BMonthly+Downloads%5D%28https%3A%2F%2Fposer.pugx.org%2Fkartik-v%2Fyii2-markdown%2Fd%2Fmonthly%29%5D%28https%3A%2F%2Fpackagist.org%2Fpackages%2Fkartik-v%2Fyii2-markdown%29%0D%0A%5B%21%5BDaily+Downloads%5D%28https%3A%2F%2Fposer.pugx.org%2Fkartik-v%2Fyii2-markdown%2Fd%2Fdaily%29%5D%28https%3A%2F%2Fpackagist.org%2Fpackages%2Fkartik-v%2Fyii2-markdown%29%0D%0A%0D%0AThis+module+provides+Markdown+Editing+and+Conversion+utilities+for+Yii+Framework+2.0.+It+implements+markdown+conversion+using+PHP+Markdown+Extra+and+PHP+Smarty+Pants.+In+addition%2C+you+can+customize+the+flavor+of+Markdown%2C+by+including+additional+custom+conversion+patterns.+The+module+also+includes+an+enhanced+customized+Markdown+Editor+Widget+for+markdown+editing+and+preview+at+runtime.+This+widget+is+styled+using+Bootstrap+3.0.+View+a+%5Bcomplete+demo%5D%28http%3A%2F%2Fdemos.krajee.com%2Fmarkdown-demo%29.%0D%0A%0D%0A%23%23%23+Markdown%0D%0A%5B%60%60%60VIEW+DEMO%60%60%60%5D%28http%3A%2F%2Fdemos.krajee.com%2Fmarkdown-details%2Fmarkdown-converter%29++%0D%0AThis+is+a+markdown+converter+class+that+uses+%5BPHP+Markdown+Extra%5D%28http%3A%2F%2Fmichelf.ca%2Fprojects%2Fphp-markdown%2Fextra%2F%29+and+%5BPHP+SmartyPantsTypographer%5D%28http%3A%2F%2Fmichelf.ca%2Fprojects%2Fphp-smartypants%2Ftypographer%2F%29+for+processing+Markdown+conversion+to+HTML.+It+also+supports+configurable+custom+conversion+processing+of+patterns+for+styling+your+own+flavour+of+Markdown+to+some+extent.%0D%0AView+%5Bexamples+and+details%5D%28http%3A%2F%2Fdemos.krajee.com%2Fmarkdown-details%2Fmarkdown-converter%29+or+view+a+%5Bcomplete+demo%5D%28http%3A%2F%2Fdemos.krajee.com%2Fmarkdown-demo%29.%0D%0A%0D%0A%23%23%23+MarkdownEditor%0D%0A%5B%60%60%60VIEW+DEMO%60%60%60%5D%28http%3A%2F%2Fdemos.krajee.com%2Fmarkdown-details%2Fmarkdown-editor%29++%0D%0AThis+is+an+advanced+markdown+input+widget+with+configurable+options.+It+is+styled+using+Bootstrap+3.0.+Key+features+available+with+this+widget+are%3A%0D%0A%0D%0A1.+Configurable+toolbar+and+buttons+for+formatting+content%0D%0A2.+Live+preview+of+Markdown+formatted+text+as+HTML%0D%0A3.+Maximize+editor+for+full+screen+editing%0D%0A4.+Implements+PHP+Markdown+Extra+and+PHP+SmartyPantsTypographer+functionality+as+provided+by+the+Markdown.%0D%0A5.+Uses+Bootstrap+3.0+styling+wherever+possible%0D%0A6.+Allows+saving%2Fexporting+of+the+text-editor+contents+as+Text+or+HTML%0D%0A7.+Configurable+header%2C+footer%2C+and+input+options.%0D%0A8.+Supports+localization+and+customization+of+messages+and+content.%0D%0A%0D%0AView+%5Bexamples+and+details%5D%28http%3A%2F%2Fdemos.krajee.com%2Fmarkdown-details%2Fmarkdown-editor%29+or+view+a+%5Bcomplete+demo%5D%28http%3A%2F%2Fdemos.krajee.com%2Fmarkdown-demo%29.%0D%0A%0D%0A%23%23%23+Demo%0D%0AYou+can+see+a+%5Bdemonstration+here%5D%28http%3A%2F%2Fdemos.krajee.com%2Fmarkdown%29+on+usage+of+these+functions+with+documentation+and+examples.%0D%0A%0D%0A%23%23+Installation%0D%0A%0D%0AThe+preferred+way+to+install+this+extension+is+through+%5Bcomposer%5D%28http%3A%2F%2Fgetcomposer.org%2Fdownload%2F%29.%0D%0A%0D%0A%3E+Note%3A+Check+the+%5Bcomposer.json%5D%28https%3A%2F%2Fgithub.com%2Fkartik-v%2Fyii2-markdown%2Fblob%2Fmaster%2Fcomposer.json%29+for+this+extension%27s+requirements+and+dependencies.+%0D%0ARead+this+%5Bweb+tip+%2Fwiki%5D%28http%3A%2F%2Fwebtips.krajee.com%2Fsetting-composer-minimum-stability-application%2F%29+on+setting+the+%60minimum-stability%60+settings+for+your+application%27s+composer.json.%0D%0A%0D%0AEither+run%0D%0A%0D%0A%60%60%60%0D%0A%24+php+composer.phar+require+kartik-v%2Fyii2-markdown+%22dev-master%22%0D%0A%60%60%60%0D%0A%0D%0Aor+add%0D%0A%0D%0A%60%60%60%0D%0A%22kartik-v%2Fyii2-markdown%22%3A+%22dev-master%22%0D%0A%60%60%60%0D%0A%0D%0Ato+the+%60%60%60require%60%60%60+section+of+your+%60composer.json%60+file.%0D%0A%0D%0A%23%23+Usage%0D%0A%0D%0A%23%23%23+Setup+Module%0D%0AAdd+%60markdown%60+to+your+modules+section+of+your+Yii+configuration+file%0D%0A%60%60%60php%0D%0A%27modules%27+%3D+%5B%0D%0A%09%2F*+other+modules+*%2F%0D%0A%09%27markdown%27+%3D%3E+%5B%0D%0A%09%09%27class%27+%3D%3E+%27kartik%5Cmarkdown%5CModule%27%2C%0D%0A%09%5D%0D%0A%5D%3B%0D%0A%60%60%60%0D%0AYou+can+setup+additional+configuration+options+for+the+%60markdown%60+module%3A%0D%0A%60%60%60php%0D%0A%27modules%27+%3D+%5B%0D%0A%09%27markdown%27+%3D%3E+%5B%0D%0A%09%09%2F%2F+the+module+class%0D%0A%09%09%27class%27+%3D%3E+%27kartik%5Cmarkdown%5CModule%27%2C%0D%0A%09%09%0D%0A%09%09%2F%2F+the+controller+action+route+used+for+markdown+editor+preview%0D%0A%09%09%27previewAction%27+%3D%3E+%27%2Fmarkdown%2Fparse%2Fpreview%27%2C%0D%0A%09%09%0D%0A%09%09%2F%2F+the+list+of+custom+conversion+patterns+for+post+processing%0D%0A%09%09%27customConversion%27+%3D%3E+%5B%0D%0A%09%09%09%27%3Ctable%3E%27+%3D%3E+%27%3Ctable+class%3D%22table+table-bordered+table-striped%22%3E%27%0D%0A%09%09%5D%2C%0D%0A%09%09%0D%0A%09%09%2F%2F+whether+to+use+PHP+SmartyPantsTypographer+to+process+Markdown+output%0D%0A%09%09%27smartyPants%27+%3D%3E+true%0D%0A%09%5D%0D%0A%09%2F*+other+modules+*%2F%0D%0A%5D%3B%0D%0A%60%60%60%0D%0A%0D%0A%23%23%23+Markdown%0D%0A%60%60%60php%0D%0Ause+kartik%5Cmarkdown%5CMarkdown%3B%0D%0A%0D%0A%2F%2F+default+call%0D%0Aecho+Markdown%3A%3Aconvert%28%24content%29%3B%0D%0A%0D%0A%2F%2F+with+custom+post+processing%0D%0Aecho+Markdown%3A%3Aconvert%28%24content%2C+%5B%27custom%27+%3D%3E+%5B%0D%0A%09%27%3Ch1%3E%27+%3D%3E+%27%3Ch1+class%3D%22custom-h1%22%3E%27%2C%0D%0A%09%27%3Ch2%3E%27+%3D%3E+%27%3Ch2+class%3D%22custom-h2%22%3E%27%2C%0D%0A%09%27%3Cp%3E%27+%3D%3E+Html%3A%3AbeginTag%28%27p%27%2C+%24options%29%2C%0D%0A%5D%5D%29%3B%0D%0A%60%60%60%0D%0A%0D%0A%23%23%23+MarkdownEditor%0D%0A%60%60%60php%0D%0A%2F%2F+add+this+in+your+view%0D%0Ause+kartik%5Cmarkdown%5CMarkdownEditor%3B%0D%0A%0D%0A%2F%2F+usage+with+model%0D%0Aecho+MarkdownEditor%3A%3Awidget%28%5B%0D%0A%09%27model%27+%3D%3E+%24model%2C+%0D%0A%09%27attribute%27+%3D%3E+%27markdown%27%2C%0D%0A%5D%29%3B%0D%0A%0D%0A%2F%2F+usage+without+model%0D%0Aecho+MarkdownEditor%3A%3Awidget%28%5B%0D%0A%09%27name%27+%3D%3E+%27markdown%27%2C+%0D%0A%09%27value%27+%3D%3E+%24value%2C%0D%0A%5D%29%3B%0D%0A%60%60%60%0D%0A%0D%0A%0D%0A%23%23%23+Smarty+Templates%0D%0ASmarty+templates+can+be+enabled+globally+by+setting+the+module+params%0D%0A%60%60%60php%0D%0A%27modules%27+%3D+%5B%0D%0A%09%27markdown%27+%3D%3E+%5B%0D%0A%09+++++%27class%27+%3D%3E+%27kartik%5Cmarkdown%5CModule%27%2C%0D%0A%09+++++%27smarty%27+%3D%3E+true%2C%0D%0A%09+++++%2F%2F+Smarty+class+configuration%0D%0A%09+++++%27smartyParams%27+%3D%3E+%5B%5D%2C%0D%0A%09+++++%2F%2F+provide+Yii%3A%3A%24app+to+the+Smarty+template+as+variable%0D%0A%09+++++%27smartyYiiApp%27+%3D%3E+true%2C%0D%0A%09+++++%2F%2F+provide+Yii%3A%3A%24app-%3Eparams+to+the+Smarty+template+as+config+variables%0D%0A%09+++++%27smartyYiiParams%27+%3D%3E+true%2C%0D%0A%09%5D%2C%0D%0A++++++++%2F*+other+modules+*%2F%0D%0A%5D%3B%0D%0A%60%60%60%0D%0AThen+define+smarty+in+the+editor%0D%0A%60%60%60php%0D%0Aecho+MarkdownEditor%3A%3Awidget%28%5B%0D%0A++++%27model%27+%3D%3E+%24model%2C+%0D%0A++++%27attribute%27+%3D%3E+%27markdown%27%2C%0D%0A++++%27smarty%27+%3D%3E+true%2C%0D%0A%5D%29%3B%0D%0A%60%60%60%0D%0ANote+that+it+may+be+unwise+to+enable+Smarty+templates+globally.+You+can+set+the+module+property+smarty+to+a+callable+function+and+provide+RBAC+features.%0D%0A%60%60%60php%0D%0A%27modules%27+%3D+%5B%0D%0A%09%27markdown%27+%3D%3E+%5B%0D%0A%09%09%27class%27+%3D%3E+%27kartik%5Cmarkdown%5CModule%27%2C%0D%0A%09%09%27smarty%27+%3D%3E+function%28%24module%29+%7B%0D%0A%09%09%09if+%28%5CYii%3A%3A%24app-%3Euser-%3Ecan%28%27smarty%27%29%29+%7B%0D%0A%09%09%09++++if%28%5CYii%3A%3A%24app-%3Euser-%3Ecan%28%27smartyYiiApp%27%29%29%0D%0A%09%09%09++++++++%24module-%3EsmartyYiiApp%3Dtrue%3B%0D%0A%09%09%09++++else%0D%0A%09%09%09++++++++%24module-%3EsmartyYiiApp%3Dfalse%3B%0D%0A%09%09%09++++if%28%5CYii%3A%3A%24app-%3Euser-%3Ecan%28%27smartyYiiParams%27%29%29%0D%0A%09%09%09++++++++%24module-%3EsmartyYiiParams%3Dtrue%3B%0D%0A%09%09%09++++else%0D%0A%09%09%09++++++++%24module-%3EsmartyYiiParams%3Dfalse%3B%0D%0A%09%09%09++++return+true%3B%0D%0A%09%09%09%7D%0D%0A%09%09%09return+false%3B%0D%0A%09%09%7D%0D%0A%09%5D%2C%0D%0A++++++++%2F*+other+modules+*%2F%0D%0A%5D%3B%0D%0A%60%60%60%0D%0AIt+may+be+a+better+option+to+leave+smarty+turned+off+in+the+config+files+and+turn+it+on+in+the+view+with+the+widget+settings.%0D%0A%60%60%60php%0D%0Aecho+MarkdownEditor%3A%3Awidget%28%5B%0D%0A++++%27model%27+%3D%3E+%24model%2C+%0D%0A++++%27attribute%27+%3D%3E+%27markdown%27%2C%0D%0A++++%27smarty%27+%3D%3E+true%2C%0D%0A++++%27previewAction%27+%3D%3E+Url%3A%3Ato%28%5B%27my%2Fpreview%27%5D%29%2C%0D%0A%5D%29%3B%0D%0A%60%60%60%0D%0AThen+create+an+action+in+your+controller+and+implement+RBAC+there.+That+way+Smarty+templates+is+off+by+default+and+you+can%0D%0Aturn+it+on+and+control+access+to+it+in+the+Controller.%0D%0A%60%60%60php%0D%0Aclass+MyController+extends+Controller%0D%0A%7B%0D%0A++++public+function+actionPreview%28%29%0D%0A++++%7B%0D%0A++++++++%24module+%3D+Yii%3A%3A%24app-%3EgetModule%28%27markdown%27%29%3B%0D%0A++++++++if+%28%5CYii%3A%3A%24app-%3Euser-%3Ecan%28%27smarty%27%29%29+%7B%0D%0A++++++++++++%24module-%3Esmarty+%3D+true%3B%0D%0A++++++++++++%24module-%3EsmartyYiiApp+%3D+%5CYii%3A%3A%24app-%3Euser-%3Ecan%28%27smartyYiiApp%27%29+%3F+true+%3A+false%3B%0D%0A++++++++++++%24module-%3EsmartyYiiParams+%3D+Yii%3A%3A%24app-%3Euser-%3Ecan%28%27smartyYiiParams%27%29+%3F+true+%3A+false%3B%0D%0A++++++++%7D%0D%0A++++++++if+%28isset%28%24_POST%5B%27source%27%5D%29%29+%7B%0D%0A++++++++++++%24output+%3D+%28strlen%28%24_POST%5B%27source%27%5D%29+%3E+0%29+%3F+Markdown%3A%3Aconvert%28%24_POST%5B%27source%27%5D%2C+%5B%27custom%27+%3D%3E+%24module-%3EcustomConversion%5D%29+%3A+%24_POST%5B%27nullMsg%27%5D%3B%0D%0A++++++++%7D%0D%0A++++++++echo+Json%3A%3Aencode%28HtmlPurifier%3A%3Aprocess%28%24output%29%29%3B%0D%0A++++%7D%0D%0A%7D%0D%0A%60%60%60%0D%0AAfter+saving+the+value+to+the+database+you+can+render+it+in+your+views+with+Markdown%3A%3Aconvert%28%29.+For+example+if+you+save+the+Markdown+field+in+the+content+column+of+the+Post+table+you+can+use+something+like+the+following.%0D%0A%60%60%60php%0D%0A%24content+%3D+Post%3A%3Afind%28%5B%27page_id%27%3D%3E%27myPage%27%5D%29-%3Eone%28%29-%3Econtent%3B%0D%0Aecho+HtmlPurifier%3A%3Aprocess%28Markdown%3A%3Aconvert%28%24content%2C+%5B%27custom%27+%3D%3E+%24module-%3EcustomConversion%5D%29%29%0D%0A%60%60%60%0D%0A%0D%0A%23%23+License%0D%0A%0D%0A**yii2-markdown**+is+released+under+the+BSD+3-Clause+License.+See+the+bundled+%60LICENSE.md%60+for+details.";s:17:"Decoded to Params";a:2:{s:14:"_csrf-frontend";s:56:"azRTTjFjczZGdgwPUwhFDg8FNQJ8DCNzD1MpHWcAJ2YvBTgbfCsjQw==";s:13:"ArticleRecord";a:4:{s:4:"name";s:62:"Kartik Yii разметка Markdown, документация";s:14:"categories_ids";a:2:{i:0;s:1:"1";i:1;s:1:"2";}s:8:"tags_ids";a:5:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";i:3;s:1:"4";i:4;s:6:"dfafds";}s:7:"content";s:8130:"yii2-markdown
+=============
+
+[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-markdown/v/stable)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![License](https://poser.pugx.org/kartik-v/yii2-markdown/license)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Total Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/downloads)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/d/monthly)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/d/daily)](https://packagist.org/packages/kartik-v/yii2-markdown)
+
+This module provides Markdown Editing and Conversion utilities for Yii Framework 2.0. It implements markdown conversion using PHP Markdown Extra and PHP Smarty Pants. In addition, you can customize the flavor of Markdown, by including additional custom conversion patterns. The module also includes an enhanced customized Markdown Editor Widget for markdown editing and preview at runtime. This widget is styled using Bootstrap 3.0. View a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### Markdown
+[```VIEW DEMO```](http://demos.krajee.com/markdown-details/markdown-converter)  
+This is a markdown converter class that uses [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/) and [PHP SmartyPantsTypographer](http://michelf.ca/projects/php-smartypants/typographer/) for processing Markdown conversion to HTML. It also supports configurable custom conversion processing of patterns for styling your own flavour of Markdown to some extent.
+View [examples and details](http://demos.krajee.com/markdown-details/markdown-converter) or view a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### MarkdownEditor
+[```VIEW DEMO```](http://demos.krajee.com/markdown-details/markdown-editor)  
+This is an advanced markdown input widget with configurable options. It is styled using Bootstrap 3.0. Key features available with this widget are:
+
+1. Configurable toolbar and buttons for formatting content
+2. Live preview of Markdown formatted text as HTML
+3. Maximize editor for full screen editing
+4. Implements PHP Markdown Extra and PHP SmartyPantsTypographer functionality as provided by the Markdown.
+5. Uses Bootstrap 3.0 styling wherever possible
+6. Allows saving/exporting of the text-editor contents as Text or HTML
+7. Configurable header, footer, and input options.
+8. Supports localization and customization of messages and content.
+
+View [examples and details](http://demos.krajee.com/markdown-details/markdown-editor) or view a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### Demo
+You can see a [demonstration here](http://demos.krajee.com/markdown) on usage of these functions with documentation and examples.
+
+## Installation
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+> Note: Check the [composer.json](https://github.com/kartik-v/yii2-markdown/blob/master/composer.json) for this extension's requirements and dependencies. 
+Read this [web tip /wiki](http://webtips.krajee.com/setting-composer-minimum-stability-application/) on setting the `minimum-stability` settings for your application's composer.json.
+
+Either run
+
+```
+$ php composer.phar require kartik-v/yii2-markdown "dev-master"
+```
+
+or add
+
+```
+"kartik-v/yii2-markdown": "dev-master"
+```
+
+to the ```require``` section of your `composer.json` file.
+
+## Usage
+
+### Setup Module
+Add `markdown` to your modules section of your Yii configuration file
+```php
+'modules' = [
+	/* other modules */
+	'markdown' => [
+		'class' => 'kartik\markdown\Module',
+	]
+];
+```
+You can setup additional configuration options for the `markdown` module:
+```php
+'modules' = [
+	'markdown' => [
+		// the module class
+		'class' => 'kartik\markdown\Module',
+		
+		// the controller action route used for markdown editor preview
+		'previewAction' => '/markdown/parse/preview',
+		
+		// the list of custom conversion patterns for post processing
+		'customConversion' => [
+			'<table>' => '<table class="table table-bordered table-striped">'
+		],
+		
+		// whether to use PHP SmartyPantsTypographer to process Markdown output
+		'smartyPants' => true
+	]
+	/* other modules */
+];
+```
+
+### Markdown
+```php
+use kartik\markdown\Markdown;
+
+// default call
+echo Markdown::convert($content);
+
+// with custom post processing
+echo Markdown::convert($content, ['custom' => [
+	'<h1>' => '<h1 class="custom-h1">',
+	'<h2>' => '<h2 class="custom-h2">',
+	'<p>' => Html::beginTag('p', $options),
+]]);
+```
+
+### MarkdownEditor
+```php
+// add this in your view
+use kartik\markdown\MarkdownEditor;
+
+// usage with model
+echo MarkdownEditor::widget([
+	'model' => $model, 
+	'attribute' => 'markdown',
+]);
+
+// usage without model
+echo MarkdownEditor::widget([
+	'name' => 'markdown', 
+	'value' => $value,
+]);
+```
+
+
+### Smarty Templates
+Smarty templates can be enabled globally by setting the module params
+```php
+'modules' = [
+	'markdown' => [
+	     'class' => 'kartik\markdown\Module',
+	     'smarty' => true,
+	     // Smarty class configuration
+	     'smartyParams' => [],
+	     // provide Yii::$app to the Smarty template as variable
+	     'smartyYiiApp' => true,
+	     // provide Yii::$app->params to the Smarty template as config variables
+	     'smartyYiiParams' => true,
+	],
+        /* other modules */
+];
+```
+Then define smarty in the editor
+```php
+echo MarkdownEditor::widget([
+    'model' => $model, 
+    'attribute' => 'markdown',
+    'smarty' => true,
+]);
+```
+Note that it may be unwise to enable Smarty templates globally. You can set the module property smarty to a callable function and provide RBAC features.
+```php
+'modules' = [
+	'markdown' => [
+		'class' => 'kartik\markdown\Module',
+		'smarty' => function($module) {
+			if (\Yii::$app->user->can('smarty')) {
+			    if(\Yii::$app->user->can('smartyYiiApp'))
+			        $module->smartyYiiApp=true;
+			    else
+			        $module->smartyYiiApp=false;
+			    if(\Yii::$app->user->can('smartyYiiParams'))
+			        $module->smartyYiiParams=true;
+			    else
+			        $module->smartyYiiParams=false;
+			    return true;
+			}
+			return false;
+		}
+	],
+        /* other modules */
+];
+```
+It may be a better option to leave smarty turned off in the config files and turn it on in the view with the widget settings.
+```php
+echo MarkdownEditor::widget([
+    'model' => $model, 
+    'attribute' => 'markdown',
+    'smarty' => true,
+    'previewAction' => Url::to(['my/preview']),
+]);
+```
+Then create an action in your controller and implement RBAC there. That way Smarty templates is off by default and you can
+turn it on and control access to it in the Controller.
+```php
+class MyController extends Controller
+{
+    public function actionPreview()
+    {
+        $module = Yii::$app->getModule('markdown');
+        if (\Yii::$app->user->can('smarty')) {
+            $module->smarty = true;
+            $module->smartyYiiApp = \Yii::$app->user->can('smartyYiiApp') ? true : false;
+            $module->smartyYiiParams = Yii::$app->user->can('smartyYiiParams') ? true : false;
+        }
+        if (isset($_POST['source'])) {
+            $output = (strlen($_POST['source']) > 0) ? Markdown::convert($_POST['source'], ['custom' => $module->customConversion]) : $_POST['nullMsg'];
+        }
+        echo Json::encode(HtmlPurifier::process($output));
+    }
+}
+```
+After saving the value to the database you can render it in your views with Markdown::convert(). For example if you save the Markdown field in the content column of the Post table you can use something like the following.
+```php
+$content = Post::find(['page_id'=>'myPage'])->one()->content;
+echo HtmlPurifier::process(Markdown::convert($content, ['custom' => $module->customConversion]))
+```
+
+## License
+
+**yii2-markdown** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.";}}}s:6:"SERVER";a:39:{s:15:"REDIRECT_STATUS";s:3:"200";s:9:"HTTP_HOST";s:11:"simplex.com";s:15:"HTTP_CONNECTION";s:10:"keep-alive";s:14:"CONTENT_LENGTH";s:5:"11711";s:18:"HTTP_CACHE_CONTROL";s:9:"max-age=0";s:11:"HTTP_ORIGIN";s:18:"http://simplex.com";s:30:"HTTP_UPGRADE_INSECURE_REQUESTS";s:1:"1";s:15:"HTTP_USER_AGENT";s:121:"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36";s:12:"CONTENT_TYPE";s:33:"application/x-www-form-urlencoded";s:11:"HTTP_ACCEPT";s:74:"text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8";s:8:"HTTP_DNT";s:1:"1";s:12:"HTTP_REFERER";s:38:"http://simplex.com/article/update?id=1";s:20:"HTTP_ACCEPT_ENCODING";s:13:"gzip, deflate";s:20:"HTTP_ACCEPT_LANGUAGE";s:44:"en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2";s:11:"HTTP_COOKIE";s:468:"_csrf-frontend=4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu%22%3B%7D; advanced-frontend=caf6719bfe0cb4259b728593e640a0fd; _identity-backend=8396253a22f56b05afc4165514b2e034296e162887d407af8c652fd22f68af96a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229rNkx8D1v31WwbqjFAkRtdykZbCFgkSJ%22%2C2592000%5D%22%3B%7D";s:4:"PATH";s:29:"/usr/bin:/bin:/usr/sbin:/sbin";s:16:"SERVER_SIGNATURE";s:0:"";s:15:"SERVER_SOFTWARE";s:6:"Apache";s:11:"SERVER_NAME";s:11:"simplex.com";s:11:"SERVER_ADDR";s:3:"::1";s:11:"SERVER_PORT";s:2:"80";s:11:"REMOTE_ADDR";s:3:"::1";s:13:"DOCUMENT_ROOT";s:54:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web";s:12:"SERVER_ADMIN";s:15:"you@example.com";s:15:"SCRIPT_FILENAME";s:64:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php";s:11:"REMOTE_PORT";s:5:"55109";s:21:"REDIRECT_QUERY_STRING";s:4:"id=1";s:12:"REDIRECT_URL";s:15:"/article/update";s:17:"GATEWAY_INTERFACE";s:7:"CGI/1.1";s:15:"SERVER_PROTOCOL";s:8:"HTTP/1.1";s:14:"REQUEST_METHOD";s:4:"POST";s:12:"QUERY_STRING";s:4:"id=1";s:11:"REQUEST_URI";s:20:"/article/update?id=1";s:11:"SCRIPT_NAME";s:10:"/index.php";s:8:"PHP_SELF";s:10:"/index.php";s:18:"REQUEST_TIME_FLOAT";d:1470027952.065000057220458984375;s:12:"REQUEST_TIME";i:1470027952;s:4:"argv";a:1:{i:0;s:4:"id=1";}s:4:"argc";i:1;}s:3:"GET";a:1:{s:2:"id";s:1:"1";}s:4:"POST";a:2:{s:14:"_csrf-frontend";s:56:"azRTTjFjczZGdgwPUwhFDg8FNQJ8DCNzD1MpHWcAJ2YvBTgbfCsjQw==";s:13:"ArticleRecord";a:4:{s:4:"name";s:62:"Kartik Yii разметка Markdown, документация";s:14:"categories_ids";a:2:{i:0;s:1:"1";i:1;s:1:"2";}s:8:"tags_ids";a:5:{i:0;s:1:"1";i:1;s:1:"2";i:2;s:1:"3";i:3;s:1:"4";i:4;s:6:"dfafds";}s:7:"content";s:8130:"yii2-markdown
+=============
+
+[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-markdown/v/stable)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![License](https://poser.pugx.org/kartik-v/yii2-markdown/license)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Total Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/downloads)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/d/monthly)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/d/daily)](https://packagist.org/packages/kartik-v/yii2-markdown)
+
+This module provides Markdown Editing and Conversion utilities for Yii Framework 2.0. It implements markdown conversion using PHP Markdown Extra and PHP Smarty Pants. In addition, you can customize the flavor of Markdown, by including additional custom conversion patterns. The module also includes an enhanced customized Markdown Editor Widget for markdown editing and preview at runtime. This widget is styled using Bootstrap 3.0. View a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### Markdown
+[```VIEW DEMO```](http://demos.krajee.com/markdown-details/markdown-converter)  
+This is a markdown converter class that uses [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/) and [PHP SmartyPantsTypographer](http://michelf.ca/projects/php-smartypants/typographer/) for processing Markdown conversion to HTML. It also supports configurable custom conversion processing of patterns for styling your own flavour of Markdown to some extent.
+View [examples and details](http://demos.krajee.com/markdown-details/markdown-converter) or view a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### MarkdownEditor
+[```VIEW DEMO```](http://demos.krajee.com/markdown-details/markdown-editor)  
+This is an advanced markdown input widget with configurable options. It is styled using Bootstrap 3.0. Key features available with this widget are:
+
+1. Configurable toolbar and buttons for formatting content
+2. Live preview of Markdown formatted text as HTML
+3. Maximize editor for full screen editing
+4. Implements PHP Markdown Extra and PHP SmartyPantsTypographer functionality as provided by the Markdown.
+5. Uses Bootstrap 3.0 styling wherever possible
+6. Allows saving/exporting of the text-editor contents as Text or HTML
+7. Configurable header, footer, and input options.
+8. Supports localization and customization of messages and content.
+
+View [examples and details](http://demos.krajee.com/markdown-details/markdown-editor) or view a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### Demo
+You can see a [demonstration here](http://demos.krajee.com/markdown) on usage of these functions with documentation and examples.
+
+## Installation
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+> Note: Check the [composer.json](https://github.com/kartik-v/yii2-markdown/blob/master/composer.json) for this extension's requirements and dependencies. 
+Read this [web tip /wiki](http://webtips.krajee.com/setting-composer-minimum-stability-application/) on setting the `minimum-stability` settings for your application's composer.json.
+
+Either run
+
+```
+$ php composer.phar require kartik-v/yii2-markdown "dev-master"
+```
+
+or add
+
+```
+"kartik-v/yii2-markdown": "dev-master"
+```
+
+to the ```require``` section of your `composer.json` file.
+
+## Usage
+
+### Setup Module
+Add `markdown` to your modules section of your Yii configuration file
+```php
+'modules' = [
+	/* other modules */
+	'markdown' => [
+		'class' => 'kartik\markdown\Module',
+	]
+];
+```
+You can setup additional configuration options for the `markdown` module:
+```php
+'modules' = [
+	'markdown' => [
+		// the module class
+		'class' => 'kartik\markdown\Module',
+		
+		// the controller action route used for markdown editor preview
+		'previewAction' => '/markdown/parse/preview',
+		
+		// the list of custom conversion patterns for post processing
+		'customConversion' => [
+			'<table>' => '<table class="table table-bordered table-striped">'
+		],
+		
+		// whether to use PHP SmartyPantsTypographer to process Markdown output
+		'smartyPants' => true
+	]
+	/* other modules */
+];
+```
+
+### Markdown
+```php
+use kartik\markdown\Markdown;
+
+// default call
+echo Markdown::convert($content);
+
+// with custom post processing
+echo Markdown::convert($content, ['custom' => [
+	'<h1>' => '<h1 class="custom-h1">',
+	'<h2>' => '<h2 class="custom-h2">',
+	'<p>' => Html::beginTag('p', $options),
+]]);
+```
+
+### MarkdownEditor
+```php
+// add this in your view
+use kartik\markdown\MarkdownEditor;
+
+// usage with model
+echo MarkdownEditor::widget([
+	'model' => $model, 
+	'attribute' => 'markdown',
+]);
+
+// usage without model
+echo MarkdownEditor::widget([
+	'name' => 'markdown', 
+	'value' => $value,
+]);
+```
+
+
+### Smarty Templates
+Smarty templates can be enabled globally by setting the module params
+```php
+'modules' = [
+	'markdown' => [
+	     'class' => 'kartik\markdown\Module',
+	     'smarty' => true,
+	     // Smarty class configuration
+	     'smartyParams' => [],
+	     // provide Yii::$app to the Smarty template as variable
+	     'smartyYiiApp' => true,
+	     // provide Yii::$app->params to the Smarty template as config variables
+	     'smartyYiiParams' => true,
+	],
+        /* other modules */
+];
+```
+Then define smarty in the editor
+```php
+echo MarkdownEditor::widget([
+    'model' => $model, 
+    'attribute' => 'markdown',
+    'smarty' => true,
+]);
+```
+Note that it may be unwise to enable Smarty templates globally. You can set the module property smarty to a callable function and provide RBAC features.
+```php
+'modules' = [
+	'markdown' => [
+		'class' => 'kartik\markdown\Module',
+		'smarty' => function($module) {
+			if (\Yii::$app->user->can('smarty')) {
+			    if(\Yii::$app->user->can('smartyYiiApp'))
+			        $module->smartyYiiApp=true;
+			    else
+			        $module->smartyYiiApp=false;
+			    if(\Yii::$app->user->can('smartyYiiParams'))
+			        $module->smartyYiiParams=true;
+			    else
+			        $module->smartyYiiParams=false;
+			    return true;
+			}
+			return false;
+		}
+	],
+        /* other modules */
+];
+```
+It may be a better option to leave smarty turned off in the config files and turn it on in the view with the widget settings.
+```php
+echo MarkdownEditor::widget([
+    'model' => $model, 
+    'attribute' => 'markdown',
+    'smarty' => true,
+    'previewAction' => Url::to(['my/preview']),
+]);
+```
+Then create an action in your controller and implement RBAC there. That way Smarty templates is off by default and you can
+turn it on and control access to it in the Controller.
+```php
+class MyController extends Controller
+{
+    public function actionPreview()
+    {
+        $module = Yii::$app->getModule('markdown');
+        if (\Yii::$app->user->can('smarty')) {
+            $module->smarty = true;
+            $module->smartyYiiApp = \Yii::$app->user->can('smartyYiiApp') ? true : false;
+            $module->smartyYiiParams = Yii::$app->user->can('smartyYiiParams') ? true : false;
+        }
+        if (isset($_POST['source'])) {
+            $output = (strlen($_POST['source']) > 0) ? Markdown::convert($_POST['source'], ['custom' => $module->customConversion]) : $_POST['nullMsg'];
+        }
+        echo Json::encode(HtmlPurifier::process($output));
+    }
+}
+```
+After saving the value to the database you can render it in your views with Markdown::convert(). For example if you save the Markdown field in the content column of the Post table you can use something like the following.
+```php
+$content = Post::find(['page_id'=>'myPage'])->one()->content;
+echo HtmlPurifier::process(Markdown::convert($content, ['custom' => $module->customConversion]))
+```
+
+## License
+
+**yii2-markdown** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.";}}s:6:"COOKIE";a:3:{s:14:"_csrf-frontend";s:140:"4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a:2:{i:0;s:14:"_csrf-frontend";i:1;s:32:"-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu";}";s:17:"advanced-frontend";s:32:"caf6719bfe0cb4259b728593e640a0fd";s:17:"_identity-backend";s:157:"8396253a22f56b05afc4165514b2e034296e162887d407af8c652fd22f68af96a:2:{i:0;s:17:"_identity-backend";i:1;s:46:"[1,"9rNkx8D1v31WwbqjFAkRtdykZbCFgkSJ",2592000]";}";}s:5:"FILES";a:0:{}s:7:"SESSION";a:0:{}}s:3:"log";a:1:{s:8:"messages";a:18:{i:0;a:5:{i:0;s:33:"Bootstrap with yii\log\Dispatcher";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1470027952.1206901073455810546875;i:4;a:0:{}}i:1;a:5:{i:0;s:21:"Loading module: debug";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1470027952.120819091796875;i:4;a:0:{}}i:2;a:5:{i:0;s:44:"Bootstrap with yii\debug\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1470027952.13895702362060546875;i:4;a:0:{}}i:3;a:5:{i:0;s:19:"Loading module: gii";i:1;i:8;i:2;s:26:"yii\base\Module::getModule";i:3;d:1470027952.1452500820159912109375;i:4;a:0:{}}i:4;a:5:{i:0;s:42:"Bootstrap with yii\gii\Module::bootstrap()";i:1;i:8;i:2;s:31:"yii\base\Application::bootstrap";i:3;d:1470027952.146729946136474609375;i:4;a:0:{}}i:5;a:5:{i:0;s:55:"No matching URL rules. Using default URL parsing logic.";i:1;i:8;i:2;s:32:"yii\web\UrlManager::parseRequest";i:3;d:1470027952.1534249782562255859375;i:4;a:0:{}}i:6;a:5:{i:0;s:33:"Route requested: 'article/update'";i:1;i:8;i:2;s:34:"yii\web\Application::handleRequest";i:3;d:1470027952.15353488922119140625;i:4;a:0:{}}i:7;a:5:{i:0;s:28:"Route to run: article/update";i:1;i:8;i:2;s:30:"yii\base\Controller::runAction";i:3;d:1470027952.1595790386199951171875;i:4;a:0:{}}i:8;a:5:{i:0;s:70:"Running action: frontend\controllers\ArticleController::actionUpdate()";i:1;i:8;i:2;s:36:"yii\base\InlineAction::runWithParams";i:3;d:1470027952.17407894134521484375;i:4;a:0:{}}i:9;a:5:{i:0;s:37:"SHOW FULL COLUMNS FROM `simp_article`";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.220294952392578125;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:10;a:5:{i:0;s:87:"Opening DB connection: mysql:host=simplexi.mysql.ukraine.com.ua;dbname=simplexi_fractal";i:1;i:4;i:2;s:23:"yii\db\Connection::open";i:3;d:1470027952.2204849720001220703125;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:15;a:5:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'simp_article' AND kcu.table_name = 'simp_article'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.24682903289794921875;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:18;a:5:{i:0;s:43:"SELECT * FROM `simp_article` WHERE `id`='1'";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.2589550018310546875;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:21;a:5:{i:0;s:81:"SELECT `article_category_id` FROM `simp_article_to_category` WHERE `article_id`=1";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.271133899688720703125;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:24;a:5:{i:0;s:71:"SELECT `article_tag_id` FROM `simp_article_to_tag` WHERE `article_id`=1";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.2747309207916259765625;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:27;a:5:{i:0;s:65:"SELECT * FROM `simp_article` WHERE `slug`='yii2-markdown' LIMIT 2";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3019859790802001953125;i:4;a:1:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:87;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:30;a:5:{i:0;s:81:"SELECT `article_category_id` FROM `simp_article_to_category` WHERE `article_id`=1";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3070681095123291015625;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:33;a:5:{i:0;s:71:"SELECT `article_tag_id` FROM `simp_article_to_tag` WHERE `article_id`=1";i:1;i:4;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.31060504913330078125;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}}}s:9:"profiling";a:3:{s:6:"memory";i:5101992;s:4:"time";d:0.2412149906158447265625;s:8:"messages";a:18:{i:11;a:5:{i:0;s:87:"Opening DB connection: mysql:host=simplexi.mysql.ukraine.com.ua;dbname=simplexi_fractal";i:1;i:80;i:2;s:23:"yii\db\Connection::open";i:3;d:1470027952.220594882965087890625;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:12;a:5:{i:0;s:87:"Opening DB connection: mysql:host=simplexi.mysql.ukraine.com.ua;dbname=simplexi_fractal";i:1;i:96;i:2;s:23:"yii\db\Connection::open";i:3;d:1470027952.240149974822998046875;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:13;a:5:{i:0;s:37:"SHOW FULL COLUMNS FROM `simp_article`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.240602016448974609375;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:14;a:5:{i:0;s:37:"SHOW FULL COLUMNS FROM `simp_article`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.2440140247344970703125;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:16;a:5:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'simp_article' AND kcu.table_name = 'simp_article'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.247088909149169921875;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:17;a:5:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'simp_article' AND kcu.table_name = 'simp_article'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.25063991546630859375;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:19;a:5:{i:0;s:43:"SELECT * FROM `simp_article` WHERE `id`='1'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.25910091400146484375;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:20;a:5:{i:0;s:43:"SELECT * FROM `simp_article` WHERE `id`='1'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.26294803619384765625;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:22;a:5:{i:0;s:81:"SELECT `article_category_id` FROM `simp_article_to_category` WHERE `article_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.2713029384613037109375;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:23;a:5:{i:0;s:81:"SELECT `article_category_id` FROM `simp_article_to_category` WHERE `article_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.2737638950347900390625;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:25;a:5:{i:0;s:71:"SELECT `article_tag_id` FROM `simp_article_to_tag` WHERE `article_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.274921894073486328125;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:26;a:5:{i:0;s:71:"SELECT `article_tag_id` FROM `simp_article_to_tag` WHERE `article_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.287889003753662109375;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:28;a:5:{i:0;s:65:"SELECT * FROM `simp_article` WHERE `slug`='yii2-markdown' LIMIT 2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3022100925445556640625;i:4;a:1:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:87;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:29;a:5:{i:0;s:65:"SELECT * FROM `simp_article` WHERE `slug`='yii2-markdown' LIMIT 2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3055438995361328125;i:4;a:1:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:87;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:31;a:5:{i:0;s:81:"SELECT `article_category_id` FROM `simp_article_to_category` WHERE `article_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3072669506072998046875;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:32;a:5:{i:0;s:81:"SELECT `article_category_id` FROM `simp_article_to_category` WHERE `article_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3096849918365478515625;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:34;a:5:{i:0;s:71:"SELECT `article_tag_id` FROM `simp_article_to_tag` WHERE `article_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3107960224151611328125;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:35;a:5:{i:0;s:71:"SELECT `article_tag_id` FROM `simp_article_to_tag` WHERE `article_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3131809234619140625;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}}}s:2:"db";a:1:{s:8:"messages";a:16:{i:13;a:5:{i:0;s:37:"SHOW FULL COLUMNS FROM `simp_article`";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.240602016448974609375;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:14;a:5:{i:0;s:37:"SHOW FULL COLUMNS FROM `simp_article`";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.2440140247344970703125;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:16;a:5:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'simp_article' AND kcu.table_name = 'simp_article'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.247088909149169921875;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:17;a:5:{i:0;s:611:"SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'simp_article' AND kcu.table_name = 'simp_article'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.25063991546630859375;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:19;a:5:{i:0;s:43:"SELECT * FROM `simp_article` WHERE `id`='1'";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.25910091400146484375;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:20;a:5:{i:0;s:43:"SELECT * FROM `simp_article` WHERE `id`='1'";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.26294803619384765625;i:4;a:2:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:118;s:8:"function";s:7:"findOne";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"::";}i:1;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:85;s:8:"function";s:9:"findModel";s:5:"class";s:38:"frontend\controllers\ArticleController";s:4:"type";s:2:"->";}}}i:22;a:5:{i:0;s:81:"SELECT `article_category_id` FROM `simp_article_to_category` WHERE `article_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.2713029384613037109375;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:23;a:5:{i:0;s:81:"SELECT `article_category_id` FROM `simp_article_to_category` WHERE `article_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.2737638950347900390625;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:25;a:5:{i:0;s:71:"SELECT `article_tag_id` FROM `simp_article_to_tag` WHERE `article_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.274921894073486328125;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:26;a:5:{i:0;s:71:"SELECT `article_tag_id` FROM `simp_article_to_tag` WHERE `article_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.287889003753662109375;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:28;a:5:{i:0;s:65:"SELECT * FROM `simp_article` WHERE `slug`='yii2-markdown' LIMIT 2";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3022100925445556640625;i:4;a:1:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:87;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:29;a:5:{i:0;s:65:"SELECT * FROM `simp_article` WHERE `slug`='yii2-markdown' LIMIT 2";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3055438995361328125;i:4;a:1:{i:0;a:5:{s:4:"file";s:84:"/Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php";s:4:"line";i:87;s:8:"function";s:4:"save";s:5:"class";s:23:"yii\db\BaseActiveRecord";s:4:"type";s:2:"->";}}}i:31;a:5:{i:0;s:81:"SELECT `article_category_id` FROM `simp_article_to_category` WHERE `article_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3072669506072998046875;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:32;a:5:{i:0;s:81:"SELECT `article_category_id` FROM `simp_article_to_category` WHERE `article_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3096849918365478515625;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:34;a:5:{i:0;s:71:"SELECT `article_tag_id` FROM `simp_article_to_tag` WHERE `article_id`=1";i:1;i:80;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3107960224151611328125;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}i:35;a:5:{i:0;s:71:"SELECT `article_tag_id` FROM `simp_article_to_tag` WHERE `article_id`=1";i:1;i:96;i:2;s:21:"yii\db\Command::query";i:3;d:1470027952.3131809234619140625;i:4;a:3:{i:0;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:239;s:8:"function";s:3:"all";s:5:"class";s:12:"yii\db\Query";s:4:"type";s:2:"->";}i:1;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:174;s:8:"function";s:14:"getRelatedList";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}i:2;a:5:{s:4:"file";s:110:"/Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php";s:4:"line";i:169;s:8:"function";s:4:"fill";s:5:"class";s:50:"arogachev\ManyToMany\components\ManyToManyRelation";s:4:"type";s:2:"->";}}}}}s:6:"assets";a:0:{}s:4:"mail";a:0:{}s:7:"summary";a:9:{s:3:"tag";s:13:"579ed8b0223c8";s:3:"url";s:38:"http://simplex.com/article/update?id=1";s:4:"ajax";i:0;s:6:"method";s:4:"POST";s:2:"ip";s:3:"::1";s:4:"time";i:1470027952;s:10:"statusCode";i:200;s:8:"sqlCount";i:8;s:9:"mailCount";i:0;}}

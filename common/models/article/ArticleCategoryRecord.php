@@ -20,10 +20,10 @@ class ArticleCategoryRecord extends SimplexActiveRecord
 {
     public $articlesIds;
 
-    public static function findRootCategories()
-    {
-        return static::findAll(['parent_id' => null]);
-    }
+//    public static function findRootCategories()
+//    {
+//        return static::findAll(['parent_id' => null]);
+//    }
 
 
     public function behaviors()
@@ -40,12 +40,7 @@ class ArticleCategoryRecord extends SimplexActiveRecord
                         'relatedAttribute' => 'article_id', // Name of the column in junction table that represents related model
                     ],
                 ],
-            ],
-            [
-                'class' => SluggableBehavior::className(),
-                'attribute' => 'name',
-                'slugAttribute' => 'slug',
-            ],
+            ]
         ];
     }
 
@@ -64,9 +59,9 @@ class ArticleCategoryRecord extends SimplexActiveRecord
     {
         return [
             [['slug', 'name'], 'required'],
-            [['slug'], 'string', 'max' => 40],
+            [['alias'], 'string', 'max' => 255],
             [['name'], 'string', 'max' => 255],
-            [['slug'], 'unique'],
+            [['alias'], 'unique'],
             [['articles'], 'safe'],
         ];
     }
@@ -83,13 +78,13 @@ class ArticleCategoryRecord extends SimplexActiveRecord
         ];
     }
 
-    /**
-     * @return mixed
-     */
-    public function getSubcategories()
-    {
-        return $this->hasMany(ArticleCategoryRecord::className(), ['parent_id' => 'id']);
-    }
+//    /**
+//     * @return mixed
+//     */
+//    public function getSubcategories()
+//    {
+//        return $this->hasMany(ArticleCategoryRecord::className(), ['parent_id' => 'id']);
+//    }
 
 
     public function getArticles()

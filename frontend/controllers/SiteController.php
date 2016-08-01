@@ -75,17 +75,9 @@ class SiteController extends Controller
      */
     public function actionIndex($categoryId = null)
     {
-        if ($categoryId) {
-            /** @var ArticleCategoryRecord $category */
-            $category = ArticleCategoryRecord::findOne($categoryId);
-            $subcategories = $category->subcategories;
-            $articles = $category->articles;
-        } else {
-            $subcategories = ArticleCategoryRecord::findRootCategories();
-            $articles = [];//ArticleRecord::findWithoutCategory();
-        }
-        
-        return $this->render('index', compact(['category', 'subcategories', 'articles']));
+        return $this->render('index', [
+ 
+        ]);
     }
 
     /**

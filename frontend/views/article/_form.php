@@ -23,7 +23,7 @@ use kartik\markdown\MarkdownEditor;
 
     <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
 
-    <?= $form->field($model, 'categories')->widget(Select2::className(), [
+    <?= $form->field($model, 'categories_ids')->widget(Select2::className(), [
         'data' => \yii\helpers\ArrayHelper::map(ArticleCategoryRecord::find()->all(), 'id', 'name'),
         'size' => Select2::MEDIUM,
         'options' => ['placeholder' => 'Выберите категории для статьи...', 'multiple' => true],
@@ -32,7 +32,7 @@ use kartik\markdown\MarkdownEditor;
         ],
     ]) ?>
 
-    <?= $form->field($model, 'tags')->widget(Select2::className(), [
+    <?= $form->field($model, 'tags_ids')->widget(Select2::className(), [
         'name' => 'color_3',
         'value' => ['red', 'green'], // initial value
         'data' => \yii\helpers\ArrayHelper::map(ArticleTagRecord::find()->all(), 'id', 'name'),
@@ -53,7 +53,7 @@ use kartik\markdown\MarkdownEditor;
     <?= $form->field($model, 'content')->widget(MarkdownEditor::className(), [
         'model' => $model,
         'attribute' => 'content',
-        'height' => '1500px',
+        'height' => '400px',
     ]) ?>
 
 

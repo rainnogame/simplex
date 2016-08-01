@@ -18,8 +18,8 @@ use yii\behaviors\SluggableBehavior;
  */
 class ArticleRecord extends SimplexActiveRecord
 {
-    public $categories;
-    public $tags;
+    public $categories_ids;
+    public $tags_ids;
 
     /**
      * @inheritdoc
@@ -36,14 +36,14 @@ class ArticleRecord extends SimplexActiveRecord
                 'class' => ManyToManyBehavior::className(),
                 'relations' => [
                     [
-                        'editableAttribute' => 'categories', // Editable attribute name
+                        'editableAttribute' => 'categories_ids', // Editable attribute name
                         'table' => '{{%article_to_category}}', // Name of the junction table
                         'ownAttribute' => 'article_id', // Name of the column in junction table that represents current model
                         'relatedModel' => ArticleCategoryRecord::className(), // Related model class
                         'relatedAttribute' => 'article_category_id', // Name of the column in junction table that represents related model
                     ],
                     [
-                        'editableAttribute' => 'tags', // Editable attribute name
+                        'editableAttribute' => 'tags_ids', // Editable attribute name
                         'table' => '{{%article_to_tag}}', // Name of the junction table
                         'ownAttribute' => 'article_id', // Name of the column in junction table that represents current model
                         'relatedModel' => ArticleTagRecord::className(), // Related model class
@@ -75,7 +75,7 @@ class ArticleRecord extends SimplexActiveRecord
             [['slug'], 'string', 'max' => 40],
             [['name'], 'string', 'max' => 255],
             [['slug'], 'unique'],
-            [['categories', 'tags'], 'safe'],
+            [['categories_ids', 'tags_ids'], 'safe'],
         ];
     }
 
@@ -94,13 +94,14 @@ class ArticleRecord extends SimplexActiveRecord
 
     public function beforeSave($insert)
     {
-        foreach ($this->tags as $tag) {
+      
+        foreach ($this->tags_ids as $tag) {
             if (!is_numeric($tag)) {
                 $newTag = new ArticleTagRecord();
                 $newTag->name = $tag;
                 if ($newTag->save()) {
-                    unset($this->tags[$tag]);
-                    $this->tags[] = $newTag->id;
+                    unset($this->tags_ids[$tag]);
+                    $this->tags_ids[] = $newTag->id;
                 }
             }
         }

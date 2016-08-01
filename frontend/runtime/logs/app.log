@@ -7340,3 +7340,1542 @@ $_SERVER = [
     ]
     'argc' => 1
 ]
+2016-07-31 22:03:07 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Connection.php:603
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Connection.php(603): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Connection.php(545): yii\db\Connection->createPdoInstance()
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Connection.php(864): yii\db\Connection->open()
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Connection.php(851): yii\db\Connection->getMasterPdo()
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Query.php(210): yii\db\Command->queryAll()
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(116): yii\db\ActiveQuery->all()
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/common/models/article/ArticleCategoryRecord.php(25): yii\db\BaseActiveRecord::findAll(Array)
+#11 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php(84): common\models\article\ArticleCategoryRecord::findRootCategories()
+#12 [internal function]: frontend\controllers\SiteController->actionIndex(NULL)
+#13 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#14 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#15 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#16 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('', Array)
+#17 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#18 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#19 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Connection.php:550
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Connection.php(864): yii\db\Connection->open()
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Connection.php(851): yii\db\Connection->getMasterPdo()
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(219): yii\db\Connection->getSlavePdo()
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(894): yii\db\Command->prepare(true)
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Query.php(210): yii\db\Command->queryAll()
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(116): yii\db\ActiveQuery->all()
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/common/models/article/ArticleCategoryRecord.php(25): yii\db\BaseActiveRecord::findAll(Array)
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php(84): common\models\article\ArticleCategoryRecord::findRootCategories()
+#10 [internal function]: frontend\controllers\SiteController->actionIndex(NULL)
+#11 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#12 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#13 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#14 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('', Array)
+#15 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#16 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#17 {main}
+Additional Information:
+
+2016-07-31 22:03:07 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '65234'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1469991787.04
+    'REQUEST_TIME' => 1469991787
+    'argv' => []
+    'argc' => 0
+]
+2016-07-31 22:04:42 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'simplexi_fractal.article_to_category' doesn't exist in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php:900
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(900): PDOStatement->execute()
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Query.php(210): yii\db\Command->queryAll()
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php(239): yii\db\Query->all()
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php(174): arogachev\ManyToMany\components\ManyToManyRelation->getRelatedList()
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php(169): arogachev\ManyToMany\components\ManyToManyRelation->fill()
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/behaviors/ManyToManyBehavior.php(47): arogachev\ManyToMany\components\ManyToManyRelation->autoFill()
+#7 [internal function]: arogachev\ManyToMany\behaviors\ManyToManyBehavior->afterFind(Object(yii\base\Event))
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\Event))
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(864): yii\base\Component->trigger('afterFind')
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/ActiveQuery.php(224): yii\db\BaseActiveRecord->afterFind()
+#11 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Query.php(211): yii\db\ActiveQuery->populate(Array)
+#12 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#13 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(116): yii\db\ActiveQuery->all()
+#14 /Users/zhevgeniy/PhpstormProjects/simplex/common/models/article/ArticleCategoryRecord.php(25): yii\db\BaseActiveRecord::findAll(Array)
+#15 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php(84): common\models\article\ArticleCategoryRecord::findRootCategories()
+#16 [internal function]: frontend\controllers\SiteController->actionIndex(NULL)
+#17 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#18 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#19 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#20 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('', Array)
+#21 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'simplexi_fractal.article_to_category' doesn't exist
+The SQL being executed was: SELECT `article_id` FROM `article_to_category` WHERE `article_category_id`=1 in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Schema.php:633
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT `article...')
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Query.php(210): yii\db\Command->queryAll()
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php(239): yii\db\Query->all()
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php(174): arogachev\ManyToMany\components\ManyToManyRelation->getRelatedList()
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php(169): arogachev\ManyToMany\components\ManyToManyRelation->fill()
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/behaviors/ManyToManyBehavior.php(47): arogachev\ManyToMany\components\ManyToManyRelation->autoFill()
+#7 [internal function]: arogachev\ManyToMany\behaviors\ManyToManyBehavior->afterFind(Object(yii\base\Event))
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\Event))
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(864): yii\base\Component->trigger('afterFind')
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/ActiveQuery.php(224): yii\db\BaseActiveRecord->afterFind()
+#11 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Query.php(211): yii\db\ActiveQuery->populate(Array)
+#12 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#13 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(116): yii\db\ActiveQuery->all()
+#14 /Users/zhevgeniy/PhpstormProjects/simplex/common/models/article/ArticleCategoryRecord.php(25): yii\db\BaseActiveRecord::findAll(Array)
+#15 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php(84): common\models\article\ArticleCategoryRecord::findRootCategories()
+#16 [internal function]: frontend\controllers\SiteController->actionIndex(NULL)
+#17 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#18 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#19 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#20 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('', Array)
+#21 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#23 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'simplexi_fractal.article_to_category' doesn't exist
+)
+
+2016-07-31 22:04:41 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '65253'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1469991881.93
+    'REQUEST_TIME' => 1469991881
+    'argv' => []
+    'argc' => 0
+]
+2016-07-31 22:05:13 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'simplexi_fractal.simparticle_to_category' doesn't exist in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php:900
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(900): PDOStatement->execute()
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Query.php(210): yii\db\Command->queryAll()
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php(239): yii\db\Query->all()
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php(174): arogachev\ManyToMany\components\ManyToManyRelation->getRelatedList()
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php(169): arogachev\ManyToMany\components\ManyToManyRelation->fill()
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/behaviors/ManyToManyBehavior.php(47): arogachev\ManyToMany\components\ManyToManyRelation->autoFill()
+#7 [internal function]: arogachev\ManyToMany\behaviors\ManyToManyBehavior->afterFind(Object(yii\base\Event))
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\Event))
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(864): yii\base\Component->trigger('afterFind')
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/ActiveQuery.php(224): yii\db\BaseActiveRecord->afterFind()
+#11 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Query.php(211): yii\db\ActiveQuery->populate(Array)
+#12 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#13 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(116): yii\db\ActiveQuery->all()
+#14 /Users/zhevgeniy/PhpstormProjects/simplex/common/models/article/ArticleCategoryRecord.php(25): yii\db\BaseActiveRecord::findAll(Array)
+#15 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php(84): common\models\article\ArticleCategoryRecord::findRootCategories()
+#16 [internal function]: frontend\controllers\SiteController->actionIndex(NULL)
+#17 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#18 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#19 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#20 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('', Array)
+#21 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'simplexi_fractal.simparticle_to_category' doesn't exist
+The SQL being executed was: SELECT `article_id` FROM `simparticle_to_category` WHERE `article_category_id`=1 in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Schema.php:633
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT `article...')
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Query.php(210): yii\db\Command->queryAll()
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php(239): yii\db\Query->all()
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php(174): arogachev\ManyToMany\components\ManyToManyRelation->getRelatedList()
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/components/ManyToManyRelation.php(169): arogachev\ManyToMany\components\ManyToManyRelation->fill()
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/arogachev/yii2-many-to-many/behaviors/ManyToManyBehavior.php(47): arogachev\ManyToMany\components\ManyToManyRelation->autoFill()
+#7 [internal function]: arogachev\ManyToMany\behaviors\ManyToManyBehavior->afterFind(Object(yii\base\Event))
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Component.php(541): call_user_func(Array, Object(yii\base\Event))
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(864): yii\base\Component->trigger('afterFind')
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/ActiveQuery.php(224): yii\db\BaseActiveRecord->afterFind()
+#11 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/Query.php(211): yii\db\ActiveQuery->populate(Array)
+#12 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/ActiveQuery.php(133): yii\db\Query->all(NULL)
+#13 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(116): yii\db\ActiveQuery->all()
+#14 /Users/zhevgeniy/PhpstormProjects/simplex/common/models/article/ArticleCategoryRecord.php(25): yii\db\BaseActiveRecord::findAll(Array)
+#15 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php(84): common\models\article\ArticleCategoryRecord::findRootCategories()
+#16 [internal function]: frontend\controllers\SiteController->actionIndex(NULL)
+#17 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#18 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#19 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#20 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('', Array)
+#21 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#22 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#23 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'simplexi_fractal.simparticle_to_category' doesn't exist
+)
+
+2016-07-31 22:05:12 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '65270'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1469991912.59
+    'REQUEST_TIME' => 1469991912
+    'argv' => []
+    'argc' => 0
+]
+2016-07-31 22:05:23 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: category in /Users/zhevgeniy/PhpstormProjects/simplex/frontend/views/site/index.php:6
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render()
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php(88): yii\base\Controller->render()
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\SiteController->actionIndex()
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction()
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-07-31 22:05:23 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '65282'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1469991923.05
+    'REQUEST_TIME' => 1469991923
+    'argv' => []
+    'argc' => 0
+]
+2016-07-31 22:05:34 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: category in /Users/zhevgeniy/PhpstormProjects/simplex/frontend/views/site/index.php:6
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render()
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php(88): yii\base\Controller->render()
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\SiteController->actionIndex()
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction()
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-07-31 22:05:34 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '65291'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1469991934.25
+    'REQUEST_TIME' => 1469991934
+    'argv' => []
+    'argc' => 0
+]
+2016-07-31 22:06:02 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: category in /Users/zhevgeniy/PhpstormProjects/simplex/frontend/views/site/index.php:6
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render()
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php(88): yii\base\Controller->render()
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\SiteController->actionIndex()
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction()
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-07-31 22:06:01 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '65300'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1469991961.89
+    'REQUEST_TIME' => 1469991961
+    'argv' => []
+    'argc' => 0
+]
+2016-07-31 22:06:34 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: category in /Users/zhevgeniy/PhpstormProjects/simplex/frontend/views/site/index.php:8
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile()
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile()
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render()
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php(88): yii\base\Controller->render()
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): frontend\controllers\SiteController->actionIndex()
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction()
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-07-31 22:06:33 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '65309'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1469991993.53
+    'REQUEST_TIME' => 1469991993
+    'argv' => []
+    'argc' => 0
+]
+2016-07-31 22:08:02 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: category in /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php:89
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): ::call_user_func_array:{/Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php:55}()
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction()
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction()
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest()
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2016-07-31 22:08:02 [::1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '65325'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1469992082.65
+    'REQUEST_TIME' => 1469992082
+    'argv' => []
+    'argc' => 0
+]
+2016-08-01 07:50:26 [::1][-][-][error][Error] Error: Call to undefined method common\models\article\ArticleCategoryRecord::findRootCategories() in /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php:85
+Stack trace:
+#0 [internal function]: frontend\controllers\SiteController->actionIndex(NULL)
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('', Array)
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#7 {main}
+2016-08-01 07:50:26 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'f71efb1d737cd1996dd3547ed50b88c6'
+    '_csrf-frontend' => '4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'HTTP_COOKIE' => 'advanced-frontend=f71efb1d737cd1996dd3547ed50b88c6; _csrf-frontend=4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '54448'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1470027026.51
+    'REQUEST_TIME' => 1470027026
+    'argv' => []
+    'argc' => 0
+]
+2016-08-01 07:50:26 [::1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2-debug/LogTarget.php:57
+
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2-debug/LogTarget.php(57): serialize(Array)
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2-debug/LogTarget.php(118): yii\debug\LogTarget->export()
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/log/Dispatcher.php(188): yii\debug\LogTarget->collect(Array, true)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/log/Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(Error))
+#6 {main}
+2016-08-01 07:50:26 [::1][-][-][info][application] $_COOKIE = [
+    'advanced-frontend' => 'f71efb1d737cd1996dd3547ed50b88c6'
+    '_csrf-frontend' => '4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu\";}'
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'HTTP_COOKIE' => 'advanced-frontend=f71efb1d737cd1996dd3547ed50b88c6; _csrf-frontend=4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '54448'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1470027026.51
+    'REQUEST_TIME' => 1470027026
+    'argv' => []
+    'argc' => 0
+]
+2016-08-01 07:57:06 [::1][1][caf6719bfe0cb4259b728593e640a0fd][error][Exception] Exception: DateTime::__construct(): Failed to parse time string (1469720478) at position 8 (7): Unexpected character in /Users/zhevgeniy/PhpstormProjects/simplex/frontend/views/site/index.php:7
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/views/site/index.php(7): DateTime->__construct('1469720478')
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/View.php(325): require('/Users/zhevgeni...')
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/Users/zhevgeni...', Array)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/Users/zhevgeni...', Array, Object(frontend\controllers\SiteController))
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(378): yii\base\View->render('index', Array, Object(frontend\controllers\SiteController))
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/SiteController.php(80): yii\base\Controller->render('index', Array)
+#6 [internal function]: frontend\controllers\SiteController->actionIndex(NULL)
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('', Array)
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('', Array)
+#11 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2016-08-01 07:57:05 [::1][1][caf6719bfe0cb4259b728593e640a0fd][info][application] $_COOKIE = [
+    '_csrf-frontend' => '4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu\";}'
+    'advanced-frontend' => 'caf6719bfe0cb4259b728593e640a0fd'
+    '_identity-backend' => '8396253a22f56b05afc4165514b2e034296e162887d407af8c652fd22f68af96a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9rNkx8D1v31WwbqjFAkRtdykZbCFgkSJ\",2592000]\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://simplex.com/site/login'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'HTTP_COOKIE' => '_csrf-frontend=4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu%22%3B%7D; advanced-frontend=caf6719bfe0cb4259b728593e640a0fd; _identity-backend=8396253a22f56b05afc4165514b2e034296e162887d407af8c652fd22f68af96a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229rNkx8D1v31WwbqjFAkRtdykZbCFgkSJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '54605'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1470027425.74
+    'REQUEST_TIME' => 1470027425
+    'argv' => []
+    'argc' => 0
+]
+2016-08-01 08:02:43 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\article\ArticleRecord::categories in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(272): yii\base\Component->__set('categories', Array)
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Model.php(698): yii\db\BaseActiveRecord->__set('categories', Array)
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Model.php(827): yii\base\Model->setAttributes(Array)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php(87): yii\base\Model->load(Array)
+#4 [internal function]: frontend\controllers\ArticleController->actionUpdate('1')
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('article/update', Array)
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-08-01 08:02:43 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'Rm9pYVB6MWxrLTYgMhEHVCJeDy0dFWEpIggTMgYZZTwCXgI0HTJhGQ=='
+    'ArticleRecord' => [
+        'name' => 'Kartik Yii разметка Markdown, документация'
+        'categories' => [
+            0 => '1'
+            1 => '2'
+        ]
+        'tags' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+            3 => '5'
+            4 => '6'
+        ]
+        'content' => 'yii2-markdown
+=============
+
+[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-markdown/v/stable)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![License](https://poser.pugx.org/kartik-v/yii2-markdown/license)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Total Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/downloads)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/d/monthly)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/d/daily)](https://packagist.org/packages/kartik-v/yii2-markdown)
+
+This module provides Markdown Editing and Conversion utilities for Yii Framework 2.0. It implements markdown conversion using PHP Markdown Extra and PHP Smarty Pants. In addition, you can customize the flavor of Markdown, by including additional custom conversion patterns. The module also includes an enhanced customized Markdown Editor Widget for markdown editing and preview at runtime. This widget is styled using Bootstrap 3.0. View a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### Markdown
+[```VIEW DEMO```](http://demos.krajee.com/markdown-details/markdown-converter)  
+This is a markdown converter class that uses [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/) and [PHP SmartyPantsTypographer](http://michelf.ca/projects/php-smartypants/typographer/) for processing Markdown conversion to HTML. It also supports configurable custom conversion processing of patterns for styling your own flavour of Markdown to some extent.
+View [examples and details](http://demos.krajee.com/markdown-details/markdown-converter) or view a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### MarkdownEditor
+[```VIEW DEMO```](http://demos.krajee.com/markdown-details/markdown-editor)  
+This is an advanced markdown input widget with configurable options. It is styled using Bootstrap 3.0. Key features available with this widget are:
+
+1. Configurable toolbar and buttons for formatting content
+2. Live preview of Markdown formatted text as HTML
+3. Maximize editor for full screen editing
+4. Implements PHP Markdown Extra and PHP SmartyPantsTypographer functionality as provided by the Markdown.
+5. Uses Bootstrap 3.0 styling wherever possible
+6. Allows saving/exporting of the text-editor contents as Text or HTML
+7. Configurable header, footer, and input options.
+8. Supports localization and customization of messages and content.
+
+View [examples and details](http://demos.krajee.com/markdown-details/markdown-editor) or view a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### Demo
+You can see a [demonstration here](http://demos.krajee.com/markdown) on usage of these functions with documentation and examples.
+
+## Installation
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+> Note: Check the [composer.json](https://github.com/kartik-v/yii2-markdown/blob/master/composer.json) for this extension\'s requirements and dependencies. 
+Read this [web tip /wiki](http://webtips.krajee.com/setting-composer-minimum-stability-application/) on setting the `minimum-stability` settings for your application\'s composer.json.
+
+Either run
+
+```
+$ php composer.phar require kartik-v/yii2-markdown \"dev-master\"
+```
+
+or add
+
+```
+\"kartik-v/yii2-markdown\": \"dev-master\"
+```
+
+to the ```require``` section of your `composer.json` file.
+
+## Usage
+
+### Setup Module
+Add `markdown` to your modules section of your Yii configuration file
+```php
+\'modules\' = [
+	/* other modules */
+	\'markdown\' => [
+		\'class\' => \'kartik\\markdown\\Module\',
+	]
+];
+```
+You can setup additional configuration options for the `markdown` module:
+```php
+\'modules\' = [
+	\'markdown\' => [
+		// the module class
+		\'class\' => \'kartik\\markdown\\Module\',
+		
+		// the controller action route used for markdown editor preview
+		\'previewAction\' => \'/markdown/parse/preview\',
+		
+		// the list of custom conversion patterns for post processing
+		\'customConversion\' => [
+			\'<table>\' => \'<table class=\"table table-bordered table-striped\">\'
+		],
+		
+		// whether to use PHP SmartyPantsTypographer to process Markdown output
+		\'smartyPants\' => true
+	]
+	/* other modules */
+];
+```
+
+### Markdown
+```php
+use kartik\\markdown\\Markdown;
+
+// default call
+echo Markdown::convert($content);
+
+// with custom post processing
+echo Markdown::convert($content, [\'custom\' => [
+	\'<h1>\' => \'<h1 class=\"custom-h1\">\',
+	\'<h2>\' => \'<h2 class=\"custom-h2\">\',
+	\'<p>\' => Html::beginTag(\'p\', $options),
+]]);
+```
+
+### MarkdownEditor
+```php
+// add this in your view
+use kartik\\markdown\\MarkdownEditor;
+
+// usage with model
+echo MarkdownEditor::widget([
+	\'model\' => $model, 
+	\'attribute\' => \'markdown\',
+]);
+
+// usage without model
+echo MarkdownEditor::widget([
+	\'name\' => \'markdown\', 
+	\'value\' => $value,
+]);
+```
+
+
+### Smarty Templates
+Smarty templates can be enabled globally by setting the module params
+```php
+\'modules\' = [
+	\'markdown\' => [
+	     \'class\' => \'kartik\\markdown\\Module\',
+	     \'smarty\' => true,
+	     // Smarty class configuration
+	     \'smartyParams\' => [],
+	     // provide Yii::$app to the Smarty template as variable
+	     \'smartyYiiApp\' => true,
+	     // provide Yii::$app->params to the Smarty template as config variables
+	     \'smartyYiiParams\' => true,
+	],
+        /* other modules */
+];
+```
+Then define smarty in the editor
+```php
+echo MarkdownEditor::widget([
+    \'model\' => $model, 
+    \'attribute\' => \'markdown\',
+    \'smarty\' => true,
+]);
+```
+Note that it may be unwise to enable Smarty templates globally. You can set the module property smarty to a callable function and provide RBAC features.
+```php
+\'modules\' = [
+	\'markdown\' => [
+		\'class\' => \'kartik\\markdown\\Module\',
+		\'smarty\' => function($module) {
+			if (\\Yii::$app->user->can(\'smarty\')) {
+			    if(\\Yii::$app->user->can(\'smartyYiiApp\'))
+			        $module->smartyYiiApp=true;
+			    else
+			        $module->smartyYiiApp=false;
+			    if(\\Yii::$app->user->can(\'smartyYiiParams\'))
+			        $module->smartyYiiParams=true;
+			    else
+			        $module->smartyYiiParams=false;
+			    return true;
+			}
+			return false;
+		}
+	],
+        /* other modules */
+];
+```
+It may be a better option to leave smarty turned off in the config files and turn it on in the view with the widget settings.
+```php
+echo MarkdownEditor::widget([
+    \'model\' => $model, 
+    \'attribute\' => \'markdown\',
+    \'smarty\' => true,
+    \'previewAction\' => Url::to([\'my/preview\']),
+]);
+```
+Then create an action in your controller and implement RBAC there. That way Smarty templates is off by default and you can
+turn it on and control access to it in the Controller.
+```php
+class MyController extends Controller
+{
+    public function actionPreview()
+    {
+        $module = Yii::$app->getModule(\'markdown\');
+        if (\\Yii::$app->user->can(\'smarty\')) {
+            $module->smarty = true;
+            $module->smartyYiiApp = \\Yii::$app->user->can(\'smartyYiiApp\') ? true : false;
+            $module->smartyYiiParams = Yii::$app->user->can(\'smartyYiiParams\') ? true : false;
+        }
+        if (isset($_POST[\'source\'])) {
+            $output = (strlen($_POST[\'source\']) > 0) ? Markdown::convert($_POST[\'source\'], [\'custom\' => $module->customConversion]) : $_POST[\'nullMsg\'];
+        }
+        echo Json::encode(HtmlPurifier::process($output));
+    }
+}
+```
+After saving the value to the database you can render it in your views with Markdown::convert(). For example if you save the Markdown field in the content column of the Post table you can use something like the following.
+```php
+$content = Post::find([\'page_id\'=>\'myPage\'])->one()->content;
+echo HtmlPurifier::process(Markdown::convert($content, [\'custom\' => $module->customConversion]))
+```
+
+## License
+
+**yii2-markdown** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu\";}'
+    'advanced-frontend' => 'caf6719bfe0cb4259b728593e640a0fd'
+    '_identity-backend' => '8396253a22f56b05afc4165514b2e034296e162887d407af8c652fd22f68af96a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9rNkx8D1v31WwbqjFAkRtdykZbCFgkSJ\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '11670'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://simplex.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://simplex.com/article/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'HTTP_COOKIE' => '_csrf-frontend=4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu%22%3B%7D; advanced-frontend=caf6719bfe0cb4259b728593e640a0fd; _identity-backend=8396253a22f56b05afc4165514b2e034296e162887d407af8c652fd22f68af96a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229rNkx8D1v31WwbqjFAkRtdykZbCFgkSJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '54952'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/article/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/article/update?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1470027763.61
+    'REQUEST_TIME' => 1470027763
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
+2016-08-01 08:03:33 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Setting unknown property: common\models\article\ArticleRecord::categories in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Component.php:197
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(272): yii\base\Component->__set('categories', Array)
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Model.php(698): yii\db\BaseActiveRecord->__set('categories', Array)
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Model.php(827): yii\base\Model->setAttributes(Array)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php(87): yii\base\Model->load(Array)
+#4 [internal function]: frontend\controllers\ArticleController->actionUpdate('1')
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('article/update', Array)
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#11 {main}
+2016-08-01 08:03:32 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'Rm9pYVB6MWxrLTYgMhEHVCJeDy0dFWEpIggTMgYZZTwCXgI0HTJhGQ=='
+    'ArticleRecord' => [
+        'name' => 'Kartik Yii разметка Markdown, документация'
+        'categories' => [
+            0 => '1'
+            1 => '2'
+        ]
+        'tags' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+            3 => '5'
+            4 => '6'
+        ]
+        'content' => 'yii2-markdown
+=============
+
+[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-markdown/v/stable)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![License](https://poser.pugx.org/kartik-v/yii2-markdown/license)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Total Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/downloads)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/d/monthly)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/d/daily)](https://packagist.org/packages/kartik-v/yii2-markdown)
+
+This module provides Markdown Editing and Conversion utilities for Yii Framework 2.0. It implements markdown conversion using PHP Markdown Extra and PHP Smarty Pants. In addition, you can customize the flavor of Markdown, by including additional custom conversion patterns. The module also includes an enhanced customized Markdown Editor Widget for markdown editing and preview at runtime. This widget is styled using Bootstrap 3.0. View a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### Markdown
+[```VIEW DEMO```](http://demos.krajee.com/markdown-details/markdown-converter)  
+This is a markdown converter class that uses [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/) and [PHP SmartyPantsTypographer](http://michelf.ca/projects/php-smartypants/typographer/) for processing Markdown conversion to HTML. It also supports configurable custom conversion processing of patterns for styling your own flavour of Markdown to some extent.
+View [examples and details](http://demos.krajee.com/markdown-details/markdown-converter) or view a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### MarkdownEditor
+[```VIEW DEMO```](http://demos.krajee.com/markdown-details/markdown-editor)  
+This is an advanced markdown input widget with configurable options. It is styled using Bootstrap 3.0. Key features available with this widget are:
+
+1. Configurable toolbar and buttons for formatting content
+2. Live preview of Markdown formatted text as HTML
+3. Maximize editor for full screen editing
+4. Implements PHP Markdown Extra and PHP SmartyPantsTypographer functionality as provided by the Markdown.
+5. Uses Bootstrap 3.0 styling wherever possible
+6. Allows saving/exporting of the text-editor contents as Text or HTML
+7. Configurable header, footer, and input options.
+8. Supports localization and customization of messages and content.
+
+View [examples and details](http://demos.krajee.com/markdown-details/markdown-editor) or view a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### Demo
+You can see a [demonstration here](http://demos.krajee.com/markdown) on usage of these functions with documentation and examples.
+
+## Installation
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+> Note: Check the [composer.json](https://github.com/kartik-v/yii2-markdown/blob/master/composer.json) for this extension\'s requirements and dependencies. 
+Read this [web tip /wiki](http://webtips.krajee.com/setting-composer-minimum-stability-application/) on setting the `minimum-stability` settings for your application\'s composer.json.
+
+Either run
+
+```
+$ php composer.phar require kartik-v/yii2-markdown \"dev-master\"
+```
+
+or add
+
+```
+\"kartik-v/yii2-markdown\": \"dev-master\"
+```
+
+to the ```require``` section of your `composer.json` file.
+
+## Usage
+
+### Setup Module
+Add `markdown` to your modules section of your Yii configuration file
+```php
+\'modules\' = [
+	/* other modules */
+	\'markdown\' => [
+		\'class\' => \'kartik\\markdown\\Module\',
+	]
+];
+```
+You can setup additional configuration options for the `markdown` module:
+```php
+\'modules\' = [
+	\'markdown\' => [
+		// the module class
+		\'class\' => \'kartik\\markdown\\Module\',
+		
+		// the controller action route used for markdown editor preview
+		\'previewAction\' => \'/markdown/parse/preview\',
+		
+		// the list of custom conversion patterns for post processing
+		\'customConversion\' => [
+			\'<table>\' => \'<table class=\"table table-bordered table-striped\">\'
+		],
+		
+		// whether to use PHP SmartyPantsTypographer to process Markdown output
+		\'smartyPants\' => true
+	]
+	/* other modules */
+];
+```
+
+### Markdown
+```php
+use kartik\\markdown\\Markdown;
+
+// default call
+echo Markdown::convert($content);
+
+// with custom post processing
+echo Markdown::convert($content, [\'custom\' => [
+	\'<h1>\' => \'<h1 class=\"custom-h1\">\',
+	\'<h2>\' => \'<h2 class=\"custom-h2\">\',
+	\'<p>\' => Html::beginTag(\'p\', $options),
+]]);
+```
+
+### MarkdownEditor
+```php
+// add this in your view
+use kartik\\markdown\\MarkdownEditor;
+
+// usage with model
+echo MarkdownEditor::widget([
+	\'model\' => $model, 
+	\'attribute\' => \'markdown\',
+]);
+
+// usage without model
+echo MarkdownEditor::widget([
+	\'name\' => \'markdown\', 
+	\'value\' => $value,
+]);
+```
+
+
+### Smarty Templates
+Smarty templates can be enabled globally by setting the module params
+```php
+\'modules\' = [
+	\'markdown\' => [
+	     \'class\' => \'kartik\\markdown\\Module\',
+	     \'smarty\' => true,
+	     // Smarty class configuration
+	     \'smartyParams\' => [],
+	     // provide Yii::$app to the Smarty template as variable
+	     \'smartyYiiApp\' => true,
+	     // provide Yii::$app->params to the Smarty template as config variables
+	     \'smartyYiiParams\' => true,
+	],
+        /* other modules */
+];
+```
+Then define smarty in the editor
+```php
+echo MarkdownEditor::widget([
+    \'model\' => $model, 
+    \'attribute\' => \'markdown\',
+    \'smarty\' => true,
+]);
+```
+Note that it may be unwise to enable Smarty templates globally. You can set the module property smarty to a callable function and provide RBAC features.
+```php
+\'modules\' = [
+	\'markdown\' => [
+		\'class\' => \'kartik\\markdown\\Module\',
+		\'smarty\' => function($module) {
+			if (\\Yii::$app->user->can(\'smarty\')) {
+			    if(\\Yii::$app->user->can(\'smartyYiiApp\'))
+			        $module->smartyYiiApp=true;
+			    else
+			        $module->smartyYiiApp=false;
+			    if(\\Yii::$app->user->can(\'smartyYiiParams\'))
+			        $module->smartyYiiParams=true;
+			    else
+			        $module->smartyYiiParams=false;
+			    return true;
+			}
+			return false;
+		}
+	],
+        /* other modules */
+];
+```
+It may be a better option to leave smarty turned off in the config files and turn it on in the view with the widget settings.
+```php
+echo MarkdownEditor::widget([
+    \'model\' => $model, 
+    \'attribute\' => \'markdown\',
+    \'smarty\' => true,
+    \'previewAction\' => Url::to([\'my/preview\']),
+]);
+```
+Then create an action in your controller and implement RBAC there. That way Smarty templates is off by default and you can
+turn it on and control access to it in the Controller.
+```php
+class MyController extends Controller
+{
+    public function actionPreview()
+    {
+        $module = Yii::$app->getModule(\'markdown\');
+        if (\\Yii::$app->user->can(\'smarty\')) {
+            $module->smarty = true;
+            $module->smartyYiiApp = \\Yii::$app->user->can(\'smartyYiiApp\') ? true : false;
+            $module->smartyYiiParams = Yii::$app->user->can(\'smartyYiiParams\') ? true : false;
+        }
+        if (isset($_POST[\'source\'])) {
+            $output = (strlen($_POST[\'source\']) > 0) ? Markdown::convert($_POST[\'source\'], [\'custom\' => $module->customConversion]) : $_POST[\'nullMsg\'];
+        }
+        echo Json::encode(HtmlPurifier::process($output));
+    }
+}
+```
+After saving the value to the database you can render it in your views with Markdown::convert(). For example if you save the Markdown field in the content column of the Post table you can use something like the following.
+```php
+$content = Post::find([\'page_id\'=>\'myPage\'])->one()->content;
+echo HtmlPurifier::process(Markdown::convert($content, [\'custom\' => $module->customConversion]))
+```
+
+## License
+
+**yii2-markdown** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu\";}'
+    'advanced-frontend' => 'caf6719bfe0cb4259b728593e640a0fd'
+    '_identity-backend' => '8396253a22f56b05afc4165514b2e034296e162887d407af8c652fd22f68af96a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9rNkx8D1v31WwbqjFAkRtdykZbCFgkSJ\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '11670'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://simplex.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://simplex.com/article/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'HTTP_COOKIE' => '_csrf-frontend=4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu%22%3B%7D; advanced-frontend=caf6719bfe0cb4259b728593e640a0fd; _identity-backend=8396253a22f56b05afc4165514b2e034296e162887d407af8c652fd22f68af96a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229rNkx8D1v31WwbqjFAkRtdykZbCFgkSJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '54968'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/article/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/article/update?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1470027812.42
+    'REQUEST_TIME' => 1470027812
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
+2016-08-01 08:04:30 [::1][-][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: common\models\article\ArticleRecord::categories in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(252): yii\base\Component->__get('categories')
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/validators/Validator.php(249): yii\db\BaseActiveRecord->__get('categories')
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Model.php(356): yii\validators\Validator->validateAttributes(Object(common\models\article\ArticleRecord), Array)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/ActiveRecord.php(527): yii\base\Model->validate(Array)
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/db/BaseActiveRecord.php(600): yii\db\ActiveRecord->update(true, NULL)
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/controllers/ArticleController.php(87): yii\db\BaseActiveRecord->save()
+#6 [internal function]: frontend\controllers\ArticleController->actionUpdate('1')
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#8 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#9 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\base\Controller->runAction('update', Array)
+#10 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/web/Application.php(87): yii\base\Module->runAction('article/update', Array)
+#11 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 /Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php(18): yii\base\Application->run()
+#13 {main}
+2016-08-01 08:04:30 [::1][-][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf-frontend' => 'WTFnM0RWQlV0czhyJj10bT0AAX8JORIQPVYdYBI1FgUdAAxmCR4SIA=='
+    'ArticleRecord' => [
+        'name' => 'Kartik Yii разметка Markdown, документация'
+        'categories_ids' => [
+            0 => '1'
+            1 => '2'
+        ]
+        'tags_ids' => [
+            0 => '1'
+            1 => '2'
+            2 => '3'
+        ]
+        'content' => 'yii2-markdown
+=============
+
+[![Latest Stable Version](https://poser.pugx.org/kartik-v/yii2-markdown/v/stable)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![License](https://poser.pugx.org/kartik-v/yii2-markdown/license)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Total Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/downloads)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Monthly Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/d/monthly)](https://packagist.org/packages/kartik-v/yii2-markdown)
+[![Daily Downloads](https://poser.pugx.org/kartik-v/yii2-markdown/d/daily)](https://packagist.org/packages/kartik-v/yii2-markdown)
+
+This module provides Markdown Editing and Conversion utilities for Yii Framework 2.0. It implements markdown conversion using PHP Markdown Extra and PHP Smarty Pants. In addition, you can customize the flavor of Markdown, by including additional custom conversion patterns. The module also includes an enhanced customized Markdown Editor Widget for markdown editing and preview at runtime. This widget is styled using Bootstrap 3.0. View a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### Markdown
+[```VIEW DEMO```](http://demos.krajee.com/markdown-details/markdown-converter)  
+This is a markdown converter class that uses [PHP Markdown Extra](http://michelf.ca/projects/php-markdown/extra/) and [PHP SmartyPantsTypographer](http://michelf.ca/projects/php-smartypants/typographer/) for processing Markdown conversion to HTML. It also supports configurable custom conversion processing of patterns for styling your own flavour of Markdown to some extent.
+View [examples and details](http://demos.krajee.com/markdown-details/markdown-converter) or view a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### MarkdownEditor
+[```VIEW DEMO```](http://demos.krajee.com/markdown-details/markdown-editor)  
+This is an advanced markdown input widget with configurable options. It is styled using Bootstrap 3.0. Key features available with this widget are:
+
+1. Configurable toolbar and buttons for formatting content
+2. Live preview of Markdown formatted text as HTML
+3. Maximize editor for full screen editing
+4. Implements PHP Markdown Extra and PHP SmartyPantsTypographer functionality as provided by the Markdown.
+5. Uses Bootstrap 3.0 styling wherever possible
+6. Allows saving/exporting of the text-editor contents as Text or HTML
+7. Configurable header, footer, and input options.
+8. Supports localization and customization of messages and content.
+
+View [examples and details](http://demos.krajee.com/markdown-details/markdown-editor) or view a [complete demo](http://demos.krajee.com/markdown-demo).
+
+### Demo
+You can see a [demonstration here](http://demos.krajee.com/markdown) on usage of these functions with documentation and examples.
+
+## Installation
+
+The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+
+> Note: Check the [composer.json](https://github.com/kartik-v/yii2-markdown/blob/master/composer.json) for this extension\'s requirements and dependencies. 
+Read this [web tip /wiki](http://webtips.krajee.com/setting-composer-minimum-stability-application/) on setting the `minimum-stability` settings for your application\'s composer.json.
+
+Either run
+
+```
+$ php composer.phar require kartik-v/yii2-markdown \"dev-master\"
+```
+
+or add
+
+```
+\"kartik-v/yii2-markdown\": \"dev-master\"
+```
+
+to the ```require``` section of your `composer.json` file.
+
+## Usage
+
+### Setup Module
+Add `markdown` to your modules section of your Yii configuration file
+```php
+\'modules\' = [
+	/* other modules */
+	\'markdown\' => [
+		\'class\' => \'kartik\\markdown\\Module\',
+	]
+];
+```
+You can setup additional configuration options for the `markdown` module:
+```php
+\'modules\' = [
+	\'markdown\' => [
+		// the module class
+		\'class\' => \'kartik\\markdown\\Module\',
+		
+		// the controller action route used for markdown editor preview
+		\'previewAction\' => \'/markdown/parse/preview\',
+		
+		// the list of custom conversion patterns for post processing
+		\'customConversion\' => [
+			\'<table>\' => \'<table class=\"table table-bordered table-striped\">\'
+		],
+		
+		// whether to use PHP SmartyPantsTypographer to process Markdown output
+		\'smartyPants\' => true
+	]
+	/* other modules */
+];
+```
+
+### Markdown
+```php
+use kartik\\markdown\\Markdown;
+
+// default call
+echo Markdown::convert($content);
+
+// with custom post processing
+echo Markdown::convert($content, [\'custom\' => [
+	\'<h1>\' => \'<h1 class=\"custom-h1\">\',
+	\'<h2>\' => \'<h2 class=\"custom-h2\">\',
+	\'<p>\' => Html::beginTag(\'p\', $options),
+]]);
+```
+
+### MarkdownEditor
+```php
+// add this in your view
+use kartik\\markdown\\MarkdownEditor;
+
+// usage with model
+echo MarkdownEditor::widget([
+	\'model\' => $model, 
+	\'attribute\' => \'markdown\',
+]);
+
+// usage without model
+echo MarkdownEditor::widget([
+	\'name\' => \'markdown\', 
+	\'value\' => $value,
+]);
+```
+
+
+### Smarty Templates
+Smarty templates can be enabled globally by setting the module params
+```php
+\'modules\' = [
+	\'markdown\' => [
+	     \'class\' => \'kartik\\markdown\\Module\',
+	     \'smarty\' => true,
+	     // Smarty class configuration
+	     \'smartyParams\' => [],
+	     // provide Yii::$app to the Smarty template as variable
+	     \'smartyYiiApp\' => true,
+	     // provide Yii::$app->params to the Smarty template as config variables
+	     \'smartyYiiParams\' => true,
+	],
+        /* other modules */
+];
+```
+Then define smarty in the editor
+```php
+echo MarkdownEditor::widget([
+    \'model\' => $model, 
+    \'attribute\' => \'markdown\',
+    \'smarty\' => true,
+]);
+```
+Note that it may be unwise to enable Smarty templates globally. You can set the module property smarty to a callable function and provide RBAC features.
+```php
+\'modules\' = [
+	\'markdown\' => [
+		\'class\' => \'kartik\\markdown\\Module\',
+		\'smarty\' => function($module) {
+			if (\\Yii::$app->user->can(\'smarty\')) {
+			    if(\\Yii::$app->user->can(\'smartyYiiApp\'))
+			        $module->smartyYiiApp=true;
+			    else
+			        $module->smartyYiiApp=false;
+			    if(\\Yii::$app->user->can(\'smartyYiiParams\'))
+			        $module->smartyYiiParams=true;
+			    else
+			        $module->smartyYiiParams=false;
+			    return true;
+			}
+			return false;
+		}
+	],
+        /* other modules */
+];
+```
+It may be a better option to leave smarty turned off in the config files and turn it on in the view with the widget settings.
+```php
+echo MarkdownEditor::widget([
+    \'model\' => $model, 
+    \'attribute\' => \'markdown\',
+    \'smarty\' => true,
+    \'previewAction\' => Url::to([\'my/preview\']),
+]);
+```
+Then create an action in your controller and implement RBAC there. That way Smarty templates is off by default and you can
+turn it on and control access to it in the Controller.
+```php
+class MyController extends Controller
+{
+    public function actionPreview()
+    {
+        $module = Yii::$app->getModule(\'markdown\');
+        if (\\Yii::$app->user->can(\'smarty\')) {
+            $module->smarty = true;
+            $module->smartyYiiApp = \\Yii::$app->user->can(\'smartyYiiApp\') ? true : false;
+            $module->smartyYiiParams = Yii::$app->user->can(\'smartyYiiParams\') ? true : false;
+        }
+        if (isset($_POST[\'source\'])) {
+            $output = (strlen($_POST[\'source\']) > 0) ? Markdown::convert($_POST[\'source\'], [\'custom\' => $module->customConversion]) : $_POST[\'nullMsg\'];
+        }
+        echo Json::encode(HtmlPurifier::process($output));
+    }
+}
+```
+After saving the value to the database you can render it in your views with Markdown::convert(). For example if you save the Markdown field in the content column of the Post table you can use something like the following.
+```php
+$content = Post::find([\'page_id\'=>\'myPage\'])->one()->content;
+echo HtmlPurifier::process(Markdown::convert($content, [\'custom\' => $module->customConversion]))
+```
+
+## License
+
+**yii2-markdown** is released under the BSD 3-Clause License. See the bundled `LICENSE.md` for details.'
+    ]
+]
+
+$_COOKIE = [
+    '_csrf-frontend' => '4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a:2:{i:0;s:14:\"_csrf-frontend\";i:1;s:32:\"-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu\";}'
+    'advanced-frontend' => 'caf6719bfe0cb4259b728593e640a0fd'
+    '_identity-backend' => '8396253a22f56b05afc4165514b2e034296e162887d407af8c652fd22f68af96a:2:{i:0;s:17:\"_identity-backend\";i:1;s:46:\"[1,\"9rNkx8D1v31WwbqjFAkRtdykZbCFgkSJ\",2592000]\";}'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'simplex.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '11634'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ORIGIN' => 'http://simplex.com'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_DNT' => '1'
+    'HTTP_REFERER' => 'http://simplex.com/article/update?id=1'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-GB,en;q=0.8,en-US;q=0.6,uk;q=0.4,ru;q=0.2'
+    'HTTP_COOKIE' => '_csrf-frontend=4170d14d24189e1fb26222d953e9182168fefa0c8b3d2172cdd193d8ff4d3495a%3A2%3A%7Bi%3A0%3Bs%3A14%3A%22_csrf-frontend%22%3Bi%3A1%3Bs%3A32%3A%22-B_Abk68d1fLMoPEdgzSVcTPD1kUMHPu%22%3B%7D; advanced-frontend=caf6719bfe0cb4259b728593e640a0fd; _identity-backend=8396253a22f56b05afc4165514b2e034296e162887d407af8c652fd22f68af96a%3A2%3A%7Bi%3A0%3Bs%3A17%3A%22_identity-backend%22%3Bi%3A1%3Bs%3A46%3A%22%5B1%2C%229rNkx8D1v31WwbqjFAkRtdykZbCFgkSJ%22%2C2592000%5D%22%3B%7D'
+    'PATH' => '/usr/bin:/bin:/usr/sbin:/sbin'
+    'SERVER_SIGNATURE' => ''
+    'SERVER_SOFTWARE' => 'Apache'
+    'SERVER_NAME' => 'simplex.com'
+    'SERVER_ADDR' => '::1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '::1'
+    'DOCUMENT_ROOT' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web'
+    'SERVER_ADMIN' => 'you@example.com'
+    'SCRIPT_FILENAME' => '/Users/zhevgeniy/PhpstormProjects/simplex/frontend/web/index.php'
+    'REMOTE_PORT' => '54996'
+    'REDIRECT_QUERY_STRING' => 'id=1'
+    'REDIRECT_URL' => '/article/update'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => 'id=1'
+    'REQUEST_URI' => '/article/update?id=1'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1470027870.34
+    'REQUEST_TIME' => 1470027870
+    'argv' => [
+        0 => 'id=1'
+    ]
+    'argc' => 1
+]
