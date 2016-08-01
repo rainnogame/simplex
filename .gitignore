@@ -31,3 +31,15 @@ phpunit.phar
 
 # vagrant runtime
 /.vagrant
+/backend/web/assets/
+/frontend/web/assets/
+/backend/runtime/debug/
+/backend/runtime/gii-2.0.9/
+/backend/runtime/logs/
+/frontend/runtime/URI/
+/frontend/runtime/debug/
+/frontend/runtime/HTML/
+/frontend/runtime/logs/
+/frontend/runtime/gii-2.0.9/
+/frontend/runtime/Smarty/
+/frontend/runtime/gii-2.0.10-dev/
