@@ -4,6 +4,7 @@ namespace app\controllers;
 
 use app\models\ArticleRecord;
 use app\models\ArticleSearch;
+use app\models\ArticleTypeRecord;
 use app\models\UploadFileForm;
 use Yii;
 use yii\filters\VerbFilter;
@@ -77,11 +78,13 @@ class ArticleController extends Controller
     /**
      * Creates a new ArticleRecord model.
      * If creation is successful, the browser will be redirected to the 'view' page.
+     * @param string $type
      * @return mixed
      */
-    public function actionCreate()
+    public function actionCreate($article_type = 'article')
     {
         $model = new ArticleRecord();
+        $model->type_id = ArticleTypeRecord::findOne(['alias' => $article_type]);
 
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['/article-view', 'article_id' => $model->id]);

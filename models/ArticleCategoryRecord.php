@@ -2,16 +2,15 @@
 
 namespace app\models;
 
-use Yii;
 use yii\helpers\ArrayHelper;
 
 /**
  * This is the model class for table "simp_article_category".
  *
  * @property integer $id
- * @property string  $alias
- * @property string  $name
- * @property mixed   articles
+ * @property string $alias
+ * @property string $name
+ * @property mixed articles
  */
 class ArticleCategoryRecord extends \yii\db\ActiveRecord
 {
@@ -37,7 +36,7 @@ class ArticleCategoryRecord extends \yii\db\ActiveRecord
 
     /**
      * @param string $rootAlias
-     * @param bool   $includeSub
+     * @param bool $includeSub
      * @return ArticleCategoryRecord[]
      */
     public static function findRootCategories($rootAlias = '', $includeSub = false)
@@ -62,6 +61,17 @@ class ArticleCategoryRecord extends \yii\db\ActiveRecord
         return static::findOne(['alias' => $categoryAlias]);
     }
 
+    public static function generateCategoryMapForDropDownWithAliases()
+    {
+        $categoryMap = [];
+
+        $rootCategories = static::findRootCategories();
+        foreach ($rootCategories as $category) {
+            $categoryMap[$category->name] = ArrayHelper::map(static::findRootCategories($category->alias, true), 'alias', 'name');
+        }
+        return $categoryMap;
+    }
+
     public function getArticles()
     {
         return $this->hasMany(ArticleRecord::className(), ['category_id' => 'id']);
@@ -76,6 +86,31 @@ class ArticleCategoryRecord extends \yii\db\ActiveRecord
             [['name'], 'required'],
             [['alias', 'name'], 'string', 'max' => 120],
         ];
+    }
+
+    public function getBaseCategory()
+    {
+        $baseCategoryAlias = substr($this->alias, 0, self::strrpos_string($this->alias, '/'));
+        return static::findOne(['alias' => $baseCategoryAlias]);
+    }
+
+    public static function strrpos_string($haystack, $needle, $offset = 0)
+    {
+        if (trim($haystack) != "" && trim($needle) != "" && $offset <= strlen($haystack)) {
+            $last_pos = $offset;
+            $found = false;
+            while (($curr_pos = strpos($haystack, $needle, $last_pos)) !== false) {
+                $found = true;
+                $last_pos = $curr_pos + 1;
+            }
+            if ($found) {
+                return $last_pos - 1;
+            } else {
+                return false;
+            }
+        } else {
+            return false;
+        }
     }
 
     /**
