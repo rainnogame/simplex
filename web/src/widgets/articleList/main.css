@@ -1,0 +1,56 @@
+ol {
+  counter-reset: li;
+  list-style: none;
+  font: 15px 'trebuchet MS', 'lucida sans';
+  padding: 0;
+  margin-bottom: 4em;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}
+ol ol {
+  margin: 0 0 0 2em;
+}
+.rectangle-list disable-a-hover-color,
+.rectangle-list a {
+  position: relative;
+  display: block;
+  padding: 0.5em 0.4em 0.5em 0.6em;
+  margin: 0.5em 0 0.5em 2.8em;
+  background: #ecf0f5;
+  color: #5d5d5d;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.rectangle-list disable-a-hover-color:hover,
+.rectangle-list a:hover {
+  background: #c1e0ee;
+}
+.rectangle-list disable-a-hover-color:hover:after,
+.rectangle-list a:hover:after {
+  left: -0.8em;
+  border-left-color: #3c8dbc;
+}
+.rectangle-list disable-a-hover-color:before,
+.rectangle-list a:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  left: -2.8em;
+  top: 50%;
+  margin-top: -1em;
+  background: #3c8dbc;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  color: #fff;
+}
+.rectangle-list disable-a-hover-color:after,
+.rectangle-list a:after {
+  position: absolute;
+  content: '';
+  border: 0.5em solid transparent;
+  left: -1em;
+  top: 50%;
+  margin-top: -0.5em;
+  transition: all 0.3s ease-out;
+}

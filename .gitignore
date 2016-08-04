@@ -1,3 +1,4 @@
+# Created by .ignore support plugin (hsz.mobi)
 # phpstorm project files
 .idea
 
@@ -13,7 +14,7 @@ nbproject
 Thumbs.db
 
 # composer vendor dir
-/vendor
+src/vendor
 
 # composer itself is not needed
 composer.phar
