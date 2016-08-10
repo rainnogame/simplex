@@ -1,0 +1,23 @@
+.articles-content {
+  padding: 30px 15px; }
+  .articles-content .articles-list {
+    list-style: none;
+    padding: 0;
+    table-layout: fixed; }
+    .articles-content .articles-list tr .actions {
+      width: 180px;
+      padding: 0;
+      column-width: 190px; }
+      .articles-content .articles-list tr .actions a {
+        width: 85px;
+        visibility: hidden; }
+    .articles-content .articles-list tr:hover {
+      background-color: #d8d8d8; }
+      .articles-content .articles-list tr:hover .actions a {
+        visibility: visible; }
+    .articles-content .articles-list tr .article-link {
+      white-space: nowrap; }
+    .articles-content .articles-list tr .article-type {
+      width: 90px; }
+
+/*# sourceMappingURL=main.css.map */

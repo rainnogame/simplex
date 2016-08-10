@@ -1,0 +1,323 @@
+2016-08-05 23:08:17 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Missing required arguments: name' in /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/console/Controller.php:157
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('create', Array)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('create', Array)
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate/create', Array)
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate/create', Array)
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/yii(20): yii\base\Application->run()
+#8 {main}
+2016-08-05 23:08:17 [-][-][-][info][application] $_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/fr/r6f7b_4j2ms0t96q1dhrf05w0000gp/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.qoocTCNpSo/Render'
+    'USER' => 'zhevgeniy'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DzjM0pqO6X/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F6:0x7:0x3E'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/zhevgeniy/PhpstormProjects/simplex'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhevgeniy'
+    'LOGNAME' => 'zhevgeniy'
+    'LC_CTYPE' => 'uk_UA.UTF-8'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1470438497.1703
+    'REQUEST_TIME' => 1470438497
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/create'
+    ]
+    'argc' => 2
+]
+2016-08-05 23:08:21 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Missing required arguments: name' in /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/console/Controller.php:157
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/base/Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('create', Array)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('create', Array)
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate/create', Array)
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate/create', Array)
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/src/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/yii(20): yii\base\Application->run()
+#8 {main}
+2016-08-05 23:08:21 [-][-][-][info][application] $_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/fr/r6f7b_4j2ms0t96q1dhrf05w0000gp/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.qoocTCNpSo/Render'
+    'USER' => 'zhevgeniy'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DzjM0pqO6X/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F6:0x7:0x3E'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/zhevgeniy/PhpstormProjects/simplex'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhevgeniy'
+    'LOGNAME' => 'zhevgeniy'
+    'LC_CTYPE' => 'uk_UA.UTF-8'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1470438500.9993
+    'REQUEST_TIME' => 1470438500
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/create'
+    ]
+    'argc' => 2
+]
+2016-08-06 00:48:58 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Migration failed. Directory specified in migrationPath doesn't exist: @app/migrations' in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:71
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/controllers/MigrateController.php(150): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/yii(20): yii\base\Application->run()
+#8 {main}
+2016-08-06 00:48:57 [-][-][-][info][application] $_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/fr/r6f7b_4j2ms0t96q1dhrf05w0000gp/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.qoocTCNpSo/Render'
+    'USER' => 'zhevgeniy'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DzjM0pqO6X/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F6:0x7:0x3E'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/zhevgeniy/PhpstormProjects/simplex'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhevgeniy'
+    'LOGNAME' => 'zhevgeniy'
+    'LC_CTYPE' => 'uk_UA.UTF-8'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1470444537.9592
+    'REQUEST_TIME' => 1470444537
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-08-06 00:51:18 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Migration failed. Directory specified in migrationPath doesn't exist: @app/migrations' in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:71
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/controllers/MigrateController.php(150): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/yii(20): yii\base\Application->run()
+#8 {main}
+2016-08-06 00:51:18 [-][-][-][info][application] $_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/fr/r6f7b_4j2ms0t96q1dhrf05w0000gp/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.qoocTCNpSo/Render'
+    'USER' => 'zhevgeniy'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DzjM0pqO6X/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F6:0x7:0x3E'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/zhevgeniy/PhpstormProjects/simplex'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhevgeniy'
+    'LOGNAME' => 'zhevgeniy'
+    'LC_CTYPE' => 'uk_UA.UTF-8'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1470444678.4302
+    'REQUEST_TIME' => 1470444678
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-08-06 00:57:13 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Migration failed. Directory specified in migrationPath doesn't exist: @app/migrations' in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:71
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/controllers/MigrateController.php(150): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/yii(20): yii\base\Application->run()
+#8 {main}
+2016-08-06 00:57:13 [-][-][-][info][application] $_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/fr/r6f7b_4j2ms0t96q1dhrf05w0000gp/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.qoocTCNpSo/Render'
+    'USER' => 'zhevgeniy'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DzjM0pqO6X/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F6:0x7:0x3E'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/zhevgeniy/PhpstormProjects/simplex'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhevgeniy'
+    'LOGNAME' => 'zhevgeniy'
+    'LC_CTYPE' => 'uk_UA.UTF-8'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1470445033.5029
+    'REQUEST_TIME' => 1470445033
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-08-06 01:15:57 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Migration failed. Directory specified in migrationPath doesn't exist: @app/migrations' in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:71
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/controllers/MigrateController.php(150): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/yii(20): yii\base\Application->run()
+#8 {main}
+2016-08-06 01:15:57 [-][-][-][info][application] $_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/fr/r6f7b_4j2ms0t96q1dhrf05w0000gp/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.qoocTCNpSo/Render'
+    'USER' => 'zhevgeniy'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DzjM0pqO6X/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F6:0x7:0x3E'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/zhevgeniy/PhpstormProjects/simplex'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhevgeniy'
+    'LOGNAME' => 'zhevgeniy'
+    'LC_CTYPE' => 'uk_UA.UTF-8'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1470446157.2958
+    'REQUEST_TIME' => 1470446157
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-08-06 01:33:05 [-][-][-][error][yii\console\Exception] exception 'yii\console\Exception' with message 'Migration failed. Directory specified in migrationPath doesn't exist: @app/migrations' in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php:71
+Stack trace:
+#0 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/controllers/MigrateController.php(150): yii\console\controllers\BaseMigrateController->beforeAction(Object(yii\base\InlineAction))
+#1 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Controller.php(152): yii\console\controllers\MigrateController->beforeAction(Object(yii\base\InlineAction))
+#2 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Controller.php(119): yii\base\Controller->runAction('', Array)
+#3 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Module.php(454): yii\console\Controller->runAction('', Array)
+#4 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate', Array)
+#5 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate', Array)
+#6 /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/base/Application.php(375): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /Users/zhevgeniy/PhpstormProjects/simplex/src-back/yii(20): yii\base\Application->run()
+#8 {main}
+2016-08-06 01:33:05 [-][-][-][info][application] $_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/fr/r6f7b_4j2ms0t96q1dhrf05w0000gp/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.qoocTCNpSo/Render'
+    'USER' => 'zhevgeniy'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DzjM0pqO6X/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F6:0x7:0x3E'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/zhevgeniy/PhpstormProjects/simplex/src-back'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhevgeniy'
+    'LOGNAME' => 'zhevgeniy'
+    'LC_CTYPE' => 'uk_UA.UTF-8'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/Users/zhevgeniy/PhpstormProjects/simplex'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1470447185.8532
+    'REQUEST_TIME' => 1470447185
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2016-08-06 01:51:23 [-][-][-][error][yii\base\ErrorException:1] exception 'yii\base\ErrorException' with message 'Class 'm160806_014151_create_table_article_values' not found' in /Users/zhevgeniy/PhpstormProjects/simplex/vendor/yiisoft/yii2/console/controllers/MigrateController.php:170
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2016-08-06 01:51:21 [-][-][-][info][application] $_SERVER = [
+    'TERM' => 'xterm-256color'
+    'SHELL' => '/bin/bash'
+    'TMPDIR' => '/var/folders/fr/r6f7b_4j2ms0t96q1dhrf05w0000gp/T/'
+    'Apple_PubSub_Socket_Render' => '/private/tmp/com.apple.launchd.qoocTCNpSo/Render'
+    'USER' => 'zhevgeniy'
+    'SSH_AUTH_SOCK' => '/private/tmp/com.apple.launchd.DzjM0pqO6X/Listeners'
+    '__CF_USER_TEXT_ENCODING' => '0x1F6:0x7:0x3E'
+    'PATH' => '/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin'
+    'PWD' => '/Users/zhevgeniy/PhpstormProjects/simplex/src-back'
+    'XPC_FLAGS' => '0x0'
+    'XPC_SERVICE_NAME' => '0'
+    'SHLVL' => '1'
+    'HOME' => '/Users/zhevgeniy'
+    'LOGNAME' => 'zhevgeniy'
+    'LC_CTYPE' => 'uk_UA.UTF-8'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/Users/zhevgeniy/PhpstormProjects/simplex'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1470448281.6689
+    'REQUEST_TIME' => 1470448281
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]

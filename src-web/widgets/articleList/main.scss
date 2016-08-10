@@ -1,0 +1,44 @@
+$base-article-list-strip-color: rgb(241, 241, 241);
+.articles-content {
+  padding: 30px 15px;
+  .articles-list {
+    list-style: none;
+    padding: 0;
+    table-layout: fixed;
+    tr {
+
+      .actions {
+        width: 180px;
+        padding: 0;
+        column-width: 190px;
+        a {
+          width: 85px;
+          visibility: hidden;
+        }
+
+      }
+      &:hover {
+        background-color: darken($base-article-list-strip-color, 10%);
+        .actions {
+          a {
+            visibility: visible;
+          }
+
+        }
+      }
+      .article-link {
+
+        //float: left;
+        white-space: nowrap;
+        a {
+
+        }
+
+      }
+      .article-type {
+        width: 90px;
+      }
+    }
+  }
+}
+

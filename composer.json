@@ -27,7 +27,8 @@
     "kartik-v/yii2-markdown": "dev-master",
     "kartik-v/yii2-widget-fileinput": "@dev",
     "kartik-v/yii2-widget-select2": "@dev",
-    "dmstr/yii2-adminlte-asset": "2.*"
+    "dmstr/yii2-adminlte-asset": "2.*",
+    "kartik-v/yii2-widgets": "*"
   },
   "require-dev": {
     "yiisoft/yii2-codeception": "*",
@@ -37,7 +38,7 @@
   },
   "config": {
     "process-timeout": 1800,
-    "vendor-dir": "src/vendor"
+    "vendor-dir": "vendor"
   },
   "scripts": {
     "post-create-project-cmd": [
@@ -58,8 +59,8 @@
       ]
     },
     "asset-installer-paths": {
-      "npm-asset-library": "src/vendor/npm",
-      "bower-asset-library": "src/vendor/bower"
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
     }
   }
 }

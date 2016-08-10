@@ -1,13 +1,17 @@
 <?php
 
 // comment out the following two lines when deployed to production
-defined('YII_DEBUG') or define('YII_DEBUG', true);
+
+defined('YII_DEBUG') or define('YII_DEBUG', TRUE);
 defined('YII_ENV') or define('YII_ENV', 'dev');
 
-require(__DIR__ . '/src/vendor/autoload.php');
-require(__DIR__ . '/src/vendor/yiisoft/yii2/Yii.php');
+require(__DIR__ . '/vendor/autoload.php');
+require(__DIR__ . '/src-back/Yii.php');
 
-$config = require(__DIR__ . '/src/config/web.php');
+Yii::$classMap['app\Application'] = __DIR__ . '/src-back/Application.php';
 
-(new yii\web\Application($config))->run();
+$config = require(__DIR__ . '/config/web.php');
+
+
+(new app\Application($config))->run();
 
