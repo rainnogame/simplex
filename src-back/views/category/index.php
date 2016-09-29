@@ -13,7 +13,7 @@ use yii\web\View;
 <div>
     <?= Html::a('Создать статью', ['/article/create', 'category_id' => $category->id], ['class' => 'btn btn-primary']) ?>
     <?= Html::a('Создать категорию', ['/article-category/create', 'parent_id' => $category->id], ['class' => 'btn btn-primary']) ?>
-    <?= Html::a('Редактировать категорию', ['/articles/update-category', 'id' => $category->id], ['class' => 'btn btn-warning']) ?>
+    <?= Html::a('Редактировать категорию', ['/article-category/update', 'id' => $category->id], ['class' => 'btn btn-warning']) ?>
     <?= Html::a('Удалить категорию', ['/article-category/delete', 'id' => $category->id], ['class' => 'btn btn-danger']) ?>
 </div>
 <?

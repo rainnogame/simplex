@@ -2,11 +2,9 @@
 
 namespace app\controllers;
 
-use app\models\ArticleRecord;
-use app\models\ArticleSearch;
 use app\models\UploadFileForm;
-use app\modules\articles\actions\UpdateArticle;
-use app\modules\articles\actions\UpdateCategory;
+use app\modules\articles\models\ArticleRecord;
+use app\modules\articles\models\ArticleSearch;
 use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -15,7 +13,7 @@ use yii\web\UploadedFile;
 /**
  * ArticleController implements the CRUD actions for ArticleRecord model.
  */
-class ArticlesController extends Controller
+class ArticleController extends Controller
 {
     
     const DEFAULT_ARTICLE_TYPE_ID = 1;
@@ -42,14 +40,14 @@ class ArticlesController extends Controller
      */
     public function actions()
     {
-        return [
-            'update-article' => [
-                'class' => UpdateArticle::className(),
-            ],
-            'update-category' => [
-                'class' => UpdateCategory::className(),
-            ],
-        ];
+//        return [
+//            'update-article' => [
+//                'class' => UpdateArticle::className(),
+//            ],
+//            'update-category' => [
+//                'class' => UpdateCategory::className(),
+//            ],
+//        ];
     }
     
     /**
@@ -98,6 +96,24 @@ class ArticlesController extends Controller
     }
     
     /**
+     * Finds the ArticleRecord model based on its primary key value.
+     * If the model is not found, a 404 HTTP exception will be thrown.
+     *
+     * @param integer $id
+     *
+     * @return ArticleRecord the loaded model
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    protected function findModel($id)
+    {
+        if (($model = ArticleRecord::findOne($id)) !== NULL) {
+            return $model;
+        } else {
+            throw new NotFoundHttpException('The requested page does not exist.');
+        }
+    }
+    
+    /**
      * Creates a new ArticleRecord model.
      * If creation is successful, the browser will be redirected to the 'view' page.
      *
@@ -114,7 +130,7 @@ class ArticlesController extends Controller
     {
         $isAjax = Yii::$app->request->isAjax;
         $model = new ArticleRecord();
-
+        
         if ($category_id) {
             $model->category_id = $category_id;
         }
@@ -126,11 +142,11 @@ class ArticlesController extends Controller
         if (!$model->type_id) {
             $model->type_id = self::DEFAULT_ARTICLE_TYPE_ID;
         }
-
+        
         if ($loadResult && $model->save()) {
             return $this->redirect(['/category' . $model->category->alias, 'article_id' => $model->id]);
         } else {
-
+            
             if ($isAjax) {
                 return $this->renderAjax('_form', [
                     'model' => $model,
@@ -140,7 +156,7 @@ class ArticlesController extends Controller
                     'model' => $model,
                 ]);
             }
-
+            
         }
     }
     
@@ -154,16 +170,17 @@ class ArticlesController extends Controller
      */
     public function actionUpdate($id)
     {
-        
         $model = $this->findModel($id);
-
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
-            return $this->redirect(['/category' . $model->category->alias, 'article_id' => $model->id]);
-        } else {
-            return $this->render('update', [
-                'model' => $model,
-            ]);
+        
+        if ($model->load(Yii::$app->request->post())) {
+         
+            if ($model->save()) {
+                return $this->redirect(['/category' . $model->category->alias, 'article_id' => $model->id]);
+            }
         }
+        return $this->render('update', [
+            'model' => $model,
+        ]);
     }
     
     /**
@@ -176,13 +193,13 @@ class ArticlesController extends Controller
      */
     public function actionDelete($id)
     {
-
+        
         $model = $this->findModel($id);
-
+        
         $categoryAlias = $model->category->alias;
-
+        
         $model->delete();
-
+        
         return $this->redirect(['/category' . $categoryAlias]);
     }
     
@@ -192,23 +209,5 @@ class ArticlesController extends Controller
         $uploadFileForm->file = UploadedFile::getInstance($uploadFileForm, 'file');
         $uploadFileForm->upload();
         return TRUE;
-    }
-    
-    /**
-     * Finds the ArticleRecord model based on its primary key value.
-     * If the model is not found, a 404 HTTP exception will be thrown.
-     *
-     * @param integer $id
-     *
-     * @return ArticleRecord the loaded model
-     * @throws NotFoundHttpException if the model cannot be found
-     */
-    protected function findModel($id)
-    {
-        if (($model = ArticleRecord::findOne($id)) !== NULL) {
-            return $model;
-        } else {
-            throw new NotFoundHttpException('The requested page does not exist.');
-        }
     }
 }

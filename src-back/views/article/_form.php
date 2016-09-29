@@ -1,7 +1,7 @@
 <?php
 
-use app\models\ArticleCategoryRecord;
-use app\models\ArticleTypeRecord;
+use app\modules\articles\models\ArticleCategoryRecord;
+use app\modules\articles\models\ArticleTypeRecord;
 use app\modules\attributes\models\ArticleAttributeRecord;
 use kartik\range\RangeInput;
 use kartik\select2\Select2;
@@ -10,7 +10,6 @@ use yii\helpers\Html;
 use yii\widgets\ActiveForm;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\ArticleRecord */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 <div class="article-record-form">
@@ -18,7 +17,6 @@ use yii\widgets\ActiveForm;
     <?php $form = ActiveForm::begin([
         'id' => 'create-article-from',
         'enableAjaxValidation' => FALSE,
-        'action' => '/article/create',
     ]); ?>
     
     <?= $field = $form->field($model, 'name')->textInput(['maxlength' => TRUE]) ?>

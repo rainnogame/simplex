@@ -2,8 +2,8 @@
 
 namespace app\controllers;
 
-use app\models\ArticleCategoryRecord;
-use app\models\ArticleCategorySearch;
+use app\modules\articles\models\ArticleCategoryRecord;
+use app\modules\articles\models\ArticleCategorySearch;
 use Yii;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -13,8 +13,8 @@ use yii\web\NotFoundHttpException;
  */
 class ArticleCategoryController extends Controller
 {
-
-
+    
+    
     public function actionAliasById($id = 0)
     {
         return ArticleCategoryRecord::findOne($id)->alias;
@@ -51,7 +51,7 @@ class ArticleCategoryController extends Controller
         ]);
     }
     
-
+    
     /**
      * Displays a single ArticleCategoryRecord model.
      *
@@ -79,16 +79,20 @@ class ArticleCategoryController extends Controller
      *
      * @internal param null $root_article_category_id root category to creating
      */
-    public function actionCreate($parent_id = '')
+    public function actionCreate($parent_id = ArticleCategoryRecord::ROOT_CATEGORY_ID)
     {
-
         $model = new ArticleCategoryRecord();
         $model->parent_id = $parent_id;
-
         $loadResult = $model->load(Yii::$app->request->post());
-
-        if ($loadResult && $model->save()) {
-            return $this->redirect(['category' . $model->alias]);
+        
+        
+        if ($loadResult) {
+            if (!$model->parent_id) {
+                $model->parent_id = ArticleCategoryRecord::ROOT_CATEGORY_ID;
+            }
+            if ($model->save()) {
+                return $this->redirect(['category' . $model->alias]);
+            }
         } else {
             return $this->render('create', [
                 'model' => $model,
@@ -107,7 +111,7 @@ class ArticleCategoryController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
-
+        
         if ($model->load(Yii::$app->request->post()) && $model->save()) {
             return $this->redirect(['category' . $model->alias]);
         } else {

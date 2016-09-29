@@ -29,7 +29,7 @@ use app\modules\articles\widgets\categoryMenu\CategoryMenuHelper;
         <form action="#" method="get" class="sidebar-form">
             <div class="input-group">
                 <input type="text" name="q" class="form-control" placeholder="Search..."/>
-              <span class="input-group-btn">
+                <span class="input-group-btn">
                 <button type='submit' name='search' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i>
                 </button>
               </span>
@@ -43,9 +43,7 @@ use app\modules\articles\widgets\categoryMenu\CategoryMenuHelper;
                 [
                     'options' => ['class' => 'sidebar-menu'],
                     'items' => [
-                        
-                        ['label' => 'Панель дебага', 'icon' => 'fa fa-file-code-o', 'url' => ['/debug/default/view']],
-                        ['label' => 'Gii генератор', 'icon' => 'fa fa-file-code-o', 'url' => ['/gii']],
+                        ['label' => 'Задачи', 'icon' => 'fa fa-pencil', 'url' => ['/task/tasks']],
                         ['label' => 'Добавить статью', 'icon' => 'fa fa-file-code-o', 'url' => ['/article/create']],
                         ['label' => 'Добавить категорию', 'icon' => 'fa fa-dashboard', 'url' => ['/article-category/create']],
                     ],
@@ -58,9 +56,11 @@ use app\modules\articles\widgets\categoryMenu\CategoryMenuHelper;
         <div id="main-category-all-menu" class="side-menu collapse in">
             <?
             $categories = ArticleCategoryRecord::getAllCategories();
+            $categoryTree = CategoryMenuHelper::createCategoryTree($categories);
+            
             ?>
             <?= CategoryMenu::widget([
-                    'items' => CategoryMenuHelper::createCategoryTree($categories),
+                    'items' => $categoryTree,
                     'currentItem' => [],
                     'parentItem' => [],
                 ]

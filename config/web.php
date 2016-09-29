@@ -1,8 +1,6 @@
 <?php
 
 $params = require(__DIR__ . '/params.php');
-
-
 $config = [
     'id' => 'basic',
     'basePath' => __DIR__ . '/../src-back',
@@ -22,7 +20,6 @@ $config = [
         '@js-url' => '@web-root-url/js',
         '@web-libs-url' => '@web-root-url/libs',
         '@web-widgets-url' => '@web-root-url/widgets',
-    
     ],
     'modules' => [
         'comment' => [
@@ -31,7 +28,9 @@ $config = [
         'attributes' => [
             'class' => 'app\modules\attributes\AttributesModule',
         ],
-        
+        'todo' => [
+            'class' => 'app\modules\todo\Module',
+        ],
         'articles' => [
             'class' => 'app\modules\articles\ArticlesModule',
         
@@ -84,7 +83,6 @@ $config = [
             'showScriptName' => FALSE,
             'rules' => [
                 'category/<categoryAlias:[\w_\/-]+>' => 'category',
-                'articles/<action>' => 'articles/default/<action>',
             ],
         ],
     

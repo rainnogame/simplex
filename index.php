@@ -4,6 +4,7 @@
 
 defined('YII_DEBUG') or define('YII_DEBUG', TRUE);
 defined('YII_ENV') or define('YII_ENV', 'dev');
+defined('YII_ENV_DB') or define('YII_ENV_DB', 'local');
 
 require(__DIR__ . '/vendor/autoload.php');
 require(__DIR__ . '/src-back/Yii.php');

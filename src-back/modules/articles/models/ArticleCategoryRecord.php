@@ -21,7 +21,7 @@ use yii\helpers\ArrayHelper;
 class ArticleCategoryRecord extends ActiveRecord
 {
     
-    const ROOT_CATEGORY_ID = 25;
+    const ROOT_CATEGORY_ID = 1;
     
     public static function generateCategoryMapForDropDown()
     {

@@ -63,9 +63,9 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $articleSearch = new ArticleSearch();
-
+        
         $articleSearch->load(Yii::$app->request->get());
-
+        
         if ($articleSearch->categories && count($articleSearch->categories) == 1) {
             $articleSearch->category_id = $articleSearch->categories[0];
         }
@@ -81,7 +81,7 @@ class SiteController extends Controller
             'articles' => $articles,
             'articleSearch' => $articleSearch,
             'pager' => $pager,
-
+        
         ]);
     }
     
