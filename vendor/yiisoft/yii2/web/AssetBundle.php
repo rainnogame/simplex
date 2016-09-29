@@ -179,9 +179,7 @@ class AssetBundle extends Object
      */
     public function publish($am)
     {
-
         if ($this->sourcePath !== null && !isset($this->basePath, $this->baseUrl)) {
-           
             list ($this->basePath, $this->baseUrl) = $am->publish($this->sourcePath, $this->publishOptions);
         }
 

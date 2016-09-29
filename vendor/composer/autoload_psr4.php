@@ -40,5 +40,7 @@ return array(
     'kartik\\affix\\' => array($vendorDir . '/kartik-v/yii2-widget-affix'),
     'dmstr\\' => array($vendorDir . '/dmstr/yii2-adminlte-asset'),
     'cebe\\markdown\\' => array($vendorDir . '/cebe/markdown'),
+    'Symfony\\Polyfill\\Mbstring\\' => array($vendorDir . '/symfony/polyfill-mbstring'),
+    'Symfony\\Component\\VarDumper\\' => array($vendorDir . '/symfony/var-dumper'),
     'Faker\\' => array($vendorDir . '/fzaninotto/faker/src/Faker'),
 );
