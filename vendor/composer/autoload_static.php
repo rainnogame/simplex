@@ -4,11 +4,13 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitb314361dedd1ccc4a87bd0c464a86296
+class ComposerStaticInit77cc5d576e3df972e02b8303456c5cb6
 {
     public static $files = array (
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
         '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
+        '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -60,6 +62,11 @@ class ComposerStaticInitb314361dedd1ccc4a87bd0c464a86296
         'c' => 
         array (
             'cebe\\markdown\\' => 14,
+        ),
+        'S' => 
+        array (
+            'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Component\\VarDumper\\' => 28,
         ),
         'F' => 
         array (
@@ -204,6 +211,14 @@ class ComposerStaticInitb314361dedd1ccc4a87bd0c464a86296
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
         ),
+        'Symfony\\Polyfill\\Mbstring\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Component\\VarDumper\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/var-dumper',
+        ),
         'Faker\\' => 
         array (
             0 => __DIR__ . '/..' . '/fzaninotto/faker/src/Faker',
@@ -222,8 +237,8 @@ class ComposerStaticInitb314361dedd1ccc4a87bd0c464a86296
         array (
             'Michelf' => 
             array (
-                0 => __DIR__ . '/..' . '/michelf/php-smartypants',
-                1 => __DIR__ . '/..' . '/michelf/php-markdown',
+                0 => __DIR__ . '/..' . '/michelf/php-markdown',
+                1 => __DIR__ . '/..' . '/michelf/php-smartypants',
             ),
         ),
         'H' => 
@@ -245,9 +260,9 @@ class ComposerStaticInitb314361dedd1ccc4a87bd0c464a86296
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitb314361dedd1ccc4a87bd0c464a86296::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitb314361dedd1ccc4a87bd0c464a86296::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInitb314361dedd1ccc4a87bd0c464a86296::$prefixesPsr0;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit77cc5d576e3df972e02b8303456c5cb6::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit77cc5d576e3df972e02b8303456c5cb6::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInit77cc5d576e3df972e02b8303456c5cb6::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }

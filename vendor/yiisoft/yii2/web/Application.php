@@ -74,10 +74,8 @@ class Application extends \yii\base\Application
      */
     public function handleRequest($request)
     {
-
         if (empty($this->catchAll)) {
             list ($route, $params) = $request->resolve();
-           
         } else {
             $route = $this->catchAll[0];
             $params = $this->catchAll;

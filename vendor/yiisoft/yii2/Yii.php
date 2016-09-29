@@ -18,7 +18,7 @@ require(__DIR__ . '/BaseYii.php');
  * @author Qiang Xue <qiang.xue@gmail.com>
  * @since 2.0
  */
-class Yii1 extends \yii\BaseYii
+class Yii extends \yii\BaseYii
 {
 }
 

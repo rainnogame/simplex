@@ -241,7 +241,7 @@ class UrlManager extends Component
                     return $result;
                 }
             }
-         
+
             if ($this->enableStrictParsing) {
                 return false;
             }
@@ -267,7 +267,6 @@ class UrlManager extends Component
                     return false;
                 }
             }
-         
 
             return [$pathInfo, []];
         } else {
